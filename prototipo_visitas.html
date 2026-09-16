@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visitas Técnicas AGSE</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#14591A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Visitas AGSE">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+  :root{
+    --paper:#F3EFE2;
+    --paper-dark:#E9E2CE;
+    --ink:#26301F;
+    --ink-soft:#5B6552;
+    --green:#3E9140;
+    --green-deep:#14591A;
+    --gold:#EFB929;
+    --rust:#B84A24;
+    --amber:#C68A22;
+    --moss:#5E7C4C;
+    --azul:#3B6EA5;
+    --azul1:#1F4E79;
+    --azul2:#3B6EA5;
+    --azul3:#6C97C4;
+    --azul4:#A9C4E0;
+    --line:#C9BE9F;
+    --white:#FBF9F2;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Space Grotesk', 'Inter', sans-serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  header.top{
+    background:var(--green-deep);
+    color:var(--white);
+    padding:18px 16px 16px;
+    position:sticky;
+    top:0;
+    z-index:20;
+  }
+  header.top h1{
+    font-size:1.15rem;
+    margin:0 0 2px;
+    color:var(--white);
+  }
+  header.top p{
+    margin:0;
+    font-size:0.8rem;
+    color:#C9D6BE;
+  }
+  nav.tabs{
+    display:flex;
+    background:var(--green);
+    position:sticky;
+    top:60px;
+    z-index:19;
+    overflow-x:auto;
+  }
+  nav.tabs button{
+    flex:1;
+    min-width:88px;
+    background:none;
+    border:none;
+    color:#D9E3CC;
+    padding:11px 6px;
+    font-size:0.78rem;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    cursor:pointer;
+    border-bottom:3px solid transparent;
+    white-space:nowrap;
+  }
+  nav.tabs button.active{
+    color:var(--white);
+    border-bottom-color:var(--gold);
+    background:rgba(0,0,0,0.12);
+  }
+  main{
+    padding:16px;
+    max-width:640px;
+    margin:0 auto;
+    padding-bottom:60px;
+  }
+  .card{
+    background:var(--white);
+    border-left:5px solid var(--green);
+    border-radius:2px;
+    padding:16px;
+    margin-bottom:14px;
+  }
+  .card.urg-rojo{border-left-color:var(--rust);}
+  .card.urg-naranja{border-left-color:#D9762E;}
+  .card.urg-amarillo{border-left-color:var(--amber);}
+  .card.urg-verde{border-left-color:var(--moss);}
+  label{
+    display:block;
+    font-size:0.78rem;
+    color:var(--ink-soft);
+    margin:12px 0 4px;
+    font-weight:600;
+  }
+  label.first{margin-top:0;}
+  select, input[type=text], input[type=number], input[type=date], textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid var(--line);
+    border-radius:3px;
+    background:var(--paper-dark);
+    color:var(--ink);
+    font-size:0.92rem;
+    font-family:'Inter',sans-serif;
+  }
+  textarea{min-height:60px; resize:vertical;}
+  .row2{display:flex; gap:10px;}
+  .row2 > div{flex:1;}
+  .area-row{
+    display:flex;
+    gap:8px;
+  }
+  .area-row input[type=number]{flex:1.4; min-width:0;}
+  .area-row select{flex:1; min-width:0;}
+  .ubicacion-row{
+    display:flex;
+    gap:8px;
+  }
+  .ubicacion-row input{flex:1; min-width:0;}
+  .ubicacion-row button{flex:0 0 auto; white-space:nowrap;}
+  .autocomplete-wrap{position:relative;}
+  .autocomplete-list{
+    position:absolute;
+    top:100%; left:0; right:0;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-top:none;
+    max-height:220px;
+    overflow-y:auto;
+    z-index:30;
+    box-shadow:0 6px 14px rgba(0,0,0,0.18);
+  }
+  .autocomplete-list div{
+    padding:10px 12px;
+    font-size:0.85rem;
+    border-bottom:1px solid var(--paper-dark);
+    cursor:pointer;
+  }
+  .autocomplete-list div:last-child{border-bottom:none;}
+  .autocomplete-list div:active, .autocomplete-list div:hover{background:var(--paper-dark);}
+  .prefill-note{
+    font-size:0.72rem;
+    color:#8A6A10;
+    background:#FBF0D2;
+    border-left:3px solid var(--gold);
+    padding:6px 8px;
+    margin:6px 0 0;
+    border-radius:2px;
+  }
+  .btn-edit{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:9px 12px;
+    font-size:0.78rem;
+    font-weight:600;
+    cursor:pointer;
+    color:var(--green-deep);
+  }
+  .btn{
+    display:inline-block;
+    background:var(--green);
+    color:var(--white);
+    border:none;
+    padding:12px 18px;
+    border-radius:3px;
+    font-weight:600;
+    font-size:0.92rem;
+    cursor:pointer;
+    margin-top:6px;
+  }
+  .btn.secondary{
+    background:none;
+    border:1px solid var(--green);
+    color:var(--green-deep);
+  }
+  .btn.small{padding:7px 12px; font-size:0.78rem;}
+  .btn.rust{background:var(--rust);}
+  .suerte-block{
+    background:var(--paper);
+    border:1px dashed var(--line);
+    padding:12px;
+    margin-top:10px;
+    border-radius:3px;
+    position:relative;
+  }
+  .suerte-block .tag{
+    position:absolute;
+    top:-10px;
+    left:10px;
+    background:var(--green-deep);
+    color:var(--white);
+    font-size:0.7rem;
+    padding:2px 8px;
+    border-radius:10px;
+    font-weight:700;
+  }
+  .semaforo{display:flex; gap:8px; margin-top:4px;}
+  .semaforo label{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+    font-size:0.68rem;
+    text-align:center;
+    padding:8px 4px;
+    border-radius:4px;
+    border:2px solid transparent;
+    cursor:pointer;
+    background:var(--paper-dark);
+    margin:0;
+    font-weight:600;
+  }
+  .semaforo input{display:none;}
+  .semaforo .dot{width:16px;height:16px;border-radius:50%;}
+  .semaforo label.sel-rojo{border-color:var(--rust); background:#F6DCCB;}
+  .semaforo label.sel-naranja{border-color:#D9762E; background:#F8E3CC;}
+  .semaforo label.sel-amarillo{border-color:var(--amber); background:#F5E7BE;}
+  .semaforo label.sel-verde{border-color:var(--moss); background:#DDEAD3;}
+  .dot-rojo{background:var(--rust);}
+  .dot-naranja{background:#D9762E;}
+  .dot-amarillo{background:var(--amber);}
+  .dot-verde{background:var(--moss);}
+  .badge{
+    display:inline-block;
+    font-size:0.68rem;
+    font-weight:700;
+    padding:3px 9px;
+    border-radius:10px;
+    color:var(--white);
+  }
+  .badge-rojo{background:var(--rust);}
+  .badge-naranja{background:#D9762E;}
+  .badge-amarillo{background:var(--amber); color:var(--ink);}
+  .badge-verde{background:var(--moss);}
+  .badge-azul{background:var(--azul);}
+  .badge-azul1{background:var(--azul1); color:#fff;}
+  .badge-azul2{background:var(--azul2); color:#fff;}
+  .badge-azul3{background:var(--azul3); color:#20304A;}
+  .badge-azul4{background:var(--azul4); color:#20304A;}
+  label.sel-azul1{border-color:var(--azul1); background:#DCE6F0;}
+  label.sel-azul2{border-color:var(--azul2); background:#E1E9F3;}
+  label.sel-azul3{border-color:var(--azul3); background:#E7EEF6;}
+  label.sel-azul4{border-color:var(--azul4); background:#EEF3F9;}
+  .dot-azul1{background:var(--azul1);}
+  .dot-azul2{background:var(--azul2);}
+  .dot-azul3{background:var(--azul3);}
+  .dot-azul4{background:var(--azul4);}
+  .pill-off{
+    display:inline-block;
+    font-size:0.68rem;
+    font-weight:700;
+    padding:3px 9px;
+    border-radius:10px;
+    background:#8A8368;
+    color:var(--white);
+  }
+  .pill-ok{
+    display:inline-block;
+    font-size:0.68rem;
+    font-weight:700;
+    padding:3px 9px;
+    border-radius:10px;
+    background:var(--moss);
+    color:var(--white);
+  }
+  .visit-summary h3{
+    margin:0 0 4px;
+    font-size:1rem;
+  }
+  .visit-summary .meta{
+    font-size:0.78rem;
+    color:var(--ink-soft);
+    margin-bottom:8px;
+  }
+  .empty{
+    text-align:center;
+    color:var(--ink-soft);
+    padding:30px 10px;
+    font-size:0.88rem;
+  }
+  .note{
+    font-size:0.76rem;
+    color:var(--ink-soft);
+    background:var(--paper-dark);
+    border-radius:3px;
+    padding:10px 12px;
+    margin-bottom:14px;
+    line-height:1.4;
+  }
+  .status-bar{
+    font-size:0.76rem;
+    padding:8px 12px;
+    border-radius:3px;
+    margin-bottom:14px;
+    font-weight:600;
+  }
+  .status-ok{background:#DDEAD3; color:var(--green-deep);}
+  .status-pending{background:#F5E7BE; color:#5B4A17;}
+  .checklist{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:6px;
+  }
+  .checklist label{
+    background:var(--paper-dark);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:6px 12px;
+    font-size:0.76rem;
+    font-weight:500;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    cursor:pointer;
+  }
+  .filter-row{
+    display:flex;
+    gap:8px;
+    margin-bottom:12px;
+    flex-wrap:wrap;
+  }
+  .filter-row select{flex:1; min-width:120px;}
+  .detail-toggle{cursor:pointer; text-decoration:underline; font-size:0.8rem; color:var(--green-deep); font-weight:600;}
+  .divider{border:none; border-top:1px solid var(--line); margin:10px 0;}
+  .small-muted{font-size:0.74rem; color:var(--ink-soft);}
+  ul.tecn-list, ul.asig-list{list-style:none; padding:0; margin:8px 0 0;}
+  ul.tecn-list li, ul.asig-list li{
+    background:var(--paper-dark);
+    padding:8px 10px;
+    border-radius:3px;
+    margin-bottom:6px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:0.85rem;
+  }
+  .x-btn{
+    background:none; border:none; color:var(--rust); font-weight:700; cursor:pointer; font-size:0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div style="display:flex; align-items:center; gap:10px;">
+    <img id="logoSlot" src="data:image/png;base64,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" alt="AGSE" style="width:38px; height:38px; object-fit:contain; flex-shrink:0;">
+    <div>
+      <h1>Visitas Técnicas AGSE</h1>
+      <p id="subtitle">Caña y Piña</p>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button data-tab="tecnico" class="active">Técnico</button>
+  <button data-tab="comercial">Comercial</button>
+  <button data-tab="jefe">Jefe Comercial</button>
+  <button data-tab="config">Configuración</button>
+</nav>
+
+<main id="main"></main>
+
+<script>
+/* ============ DATOS BASE ============ */
+const CLIENTES_POR_COMERCIAL = {"Javier Zambrano": ["SANCLEMENTE MONEDERO JIMMY ANDRES", "GARCES CASTILLA JORGE ENRIQUE", "CAICEDO ALEGRIA LUIS HUMBERTO", "SERNA AYALA CRISTIAN CAMILO", "VON SNEIDERN CALERO AXEL", "CAMPO GUSTAVO ADOLFO", "QUINTERO ARIZALA CARLOS EDUARDO", "TORO GALLEGO JESUS ANTONIO", "VILLALOBOS GIRALDO LUIS FERNANDO", "MESA GIRALDO JUAN CARLOS", "CABRERA MENDOZA JESUS EDUARDO", "GONZALEZ SALCEDO RODRIGO", "MESA GIRALDO EDUARDO", "MESA GIRALDO FRANCISCO JOSE", "CALLE LLANO GILBERTO", "CUADROS GUTIERREZ HECTOR DIEGO", "SALCEDO GUERRERO VICTOR MANUEL", "TORRES VELASQUEZ JOAQUIN CAMILO", "VELEZ RACINES CAMILO ALFONSO", "TEJADA CRUZ GUILLERMO LEON", "RAMIREZ QUINTERO JOAQUIN HERNAN", "LOPEZ MARMOLEJO DIEGO MIGUEL", "CALERO CAMPO FERNANDO", "DIAZ GONZALEZ RODRIGO", "CALERO APARICIO FERNANDO", "PALMA JIMENEZ MISAEL", "ROMERO CASTRO FABIO", "APARICIO ARBOLEDA ALBERTO LEON", "ORTEGA MELO JAMES OLMEDO", "MONTEALEGRE LEON FERNANDO AUGUSTO", "ORTEGA MARTINEZ RAUL", "MONTEALEGRE GARRIDO HECTOR FABIO", "MARTIN REVILLA ANTONIO", "LOPEZ OCHOA GUIDO MAURICIO", "MONTEALEGRE GARRIDO LUIS FERNANDO", "SANCHEZ SHIMA SEIGO MAURICIO", "TANAKA TANAKA FELIPE", "MORALES VALLECILLA FERNANDO", "ALVAREZ CABAL ALBEIRO", "RODRIGUEZ CAMBINDO EDGAR MARCELINO", "MADRINAN SANCLEMENTE EDUARDO JOSE", "PARDO ZAPATA LORENZO", "LOPEZ OCHOA ALEJANDRA", "MONTANO DE VASQUES BRENDA LYDA", "CARO MOLINA BEATRIZ", "MOLINA CALERO MARIA XIMENA", "TANAKA DE ITO LILIA", "PALMA DE TORRES ANA LUZ", "PALMA DE CADAVID ADIELA", "ROMERO DE POLANCO CARMEN ELENA", "MONTEALEGRE GARRIDO LUZ STELLA", "GARCIA MEDINA LILIANA", "MONTEALEGRE GARRIDO LILIANA", "MADRINAN PLAZA GLORIA MERCEDES", "SANCHEZ SHIMA LUZ ANGELA", "MONTEALEGRE LEON GRACIELA", "TAKEGAMI HERNANDEZ MARIA MONICA", "MADRINAN PLAZA BEATRIZ EUGENIA", "TANAKA NAKATA NELLY", "LOZADA VIERA LUZ MARINA", "CALERO CAMPO MARIANA DE JESUS", "SAAVEDRA SOTO ANGELA MARIA", "TANAKA NAKATA GLADYS", "VON SNEIDERN CALERO ERIKA", "CABAL CABAL CELINA", "RACINES DE VELEZ MARIA DEL PILAR", "ELVIR MEJIA MARCO ANTONIO", "GONZALEZ EDISON", "ZAPATA WEIMAR", "ZULUAGA REYES CLAUDIA ALEXANDRA", "CORREA BORRERO ALVARO JOSE", "VALENCIA COLLAZOS PEDRO ANGEL", "LLOREDA AZCARATE JOSE LUIS", "CUERO VALENCIA ANGELA", "ELVIR AGUILAR MARCO ANTONIO", "ZULUAGA REYES LUIS ALFREDO", "QUANTUM SAS", "CENTRO INTERNACIONAL DE AGRICULTURA TROPICAL", "AGROCHIRCAL S A S", "SAAVEDRA AGROPECUARIA LTDA", "AGROEMPRESARIAL LTDA", "AGRICOLA ROMA S A", "AGROPECUARIA BORRERO Y BORRERO Y CIA LTDA", "RAPIASEO SAS", "LA MAESTRANZA LTDA", "INVERSIONES GUACHAL SAS", "GA CADENA LOPEZ S.A.S.", "MCH S A S", "TAQUESTA INVERSIONES SAS", "VILLEGAS MEJIA Y CIA SAS", "AGROPECUARIA CHIQUIQUE S A S", "AGRICOLA BARILOCHE SAS", "HACIENDA LA CAROLINA LTDA", "BERNAL VALLEJO Y CIA S A S", "N M REYES E HIJOS Y CIA SAS", "ADMINISTRADORA LOS VALLADOS S.A.S.", "AGROCOLSA SAS", "LA CONCEPCION S A", "CANELAGRO LTDA", "SIAGRO S A S", "PALMITROPICALES SAS", "AGRICOLA EL BORINQUEN SOCIEDAD POR ACCIONES SIMP", "OFELIA MARMOLEJO R Y COMPANIA SAS", "HACIENDA NORMANDIA S A S", "HUGO ARIAS Y COMPAÑIA S.A.S.", "LLOCAB LTDA Y CIA SCA", "SAENZ FETY S.A.S.", "CARTON DE COLOMBIA S A", "HACIENDA GARZONERO SAS", "AMALFI SAS", "PLAZA DE TOROS DE CALI S.A.", "YUNDECITO S A", "JAMAYCO SAS", "AGRICOLA CHONDULAR S A S", "AGRICOLA HATO VIEJO YOTOCO S A S", "INVERSIONES ALVALENA S A", "CAMPO CORDOBA SAS", "PONTEVEDRA SAS", "ANTONIO TANAKA E HIJOS S A S", "AGROPECUARIA PICHUCHO SAS", "CLUB CAMPESTRE DE CALI", "INVERSIONES EQUIPOS Y SERVICIOS SOCIEDAD SA", "AGRICOLA ZAINERA SAS", "INVERSIONES DEL CAMPO LTDA", "AGRICOLA COLOMBIANA SA", "AGROMELAO S.A.S.", "REFORESTADORA ANDINA S A", "INVERSIONES VENECIA SA", "EDUARDO ROMERO CORREA HOLGUIN Y CIA S C A", "VEGA GUERRERO HERMANAS SAS", "SHINCHI TANAKA Y CIA S EN C", "INVERSIONES CASTRO CASTRO Y CIA S.A. EN LIQUIDAC", "FUNDACION VALLE DE LILI", "GONZALEZ Y BARRIENTOS CIA S EN C", "INVERSIONES MADRINAN SAS", "QUINQUE SAS", "COMPANIA AGRICOLA CAUCANA S A", "HACIENDA SAN JOSE S A", "MANUELITA S A", "INGENIO PICHICHI S A", "PROTERRA COLOMBIA S A", "AGRICOLA LA JULIA LTDA", "AGRO ARAKI Y CIA S EN C", "RICAURTE TANAKA E HIJOS LTDA", "HERNANDO NAKATA Y CIA LTDA", "AZCARATES Y TASCON LTDA", "AGRICOLA EL CABUYAL S A S", "COMPANIA AGRICOLA SAN FELIPE SA", "AGROGUACHAL SA", "INVERSIONES RODRIGUEZ FIGUEROA SECS", "INVERSIONES MONTEALEGRE ECHEVERRY S C A", "RIZA SAS", "AGROPECUARIA EL JAPON S.A.S.", "EXPORTAGRO GONZALEZ Y CIA S EN C", "GRUPO SAN JUANITO SAS", "RIOPAILA CASTILLA S A", "FDN NUTRICION ANIMAL SAS", "INVERSIONES CABAL BARONA Y CIA SAS", "INVERSIONES CABAL Y CIA SAS", "INVERSIONES LOS CARRETOS SAS", "GRANJA PORCICOLA EL ARBOLITO LIMITADA", "CALLO CIA S EN C", "DESTILERIA RIOPAILA SAS", "AGROGANADERA EL VIENTO SAS", "L P VILLEGAS MEJIA S A S", "ALADAS Y CIA S EN C", "GRANJA PORCICOLA LA VENTURA SA", "AGROCEREALES DEL VALLE SA", "AYAMONTE SAS", "MANUFACTURAS MODEL INTERNACIONAL SAS", "3MAR AGROINDUSTRIAL Y CIA S A S", "SUCONTRATISTA SAS", "INVERSIONES BALBUENO SAS", "AGROPECUARIA EL CALLEJON SAS", "INVERSIONES LA BUONA VITA SAS", "BARRIENTOS PATIÑO Y CIA. S. EN C.S.", "INVERSIONES J C D SAS", "DEMOVICOL SAS", "ESTADIO DEPORTIVO CALI PROPIEDAD HORIZONTAL", "ALTEO S.A.S.", "AGROTRINIDAD SA SOCIEDAD CIVIL", "ALJOCO AGRICOLA SAS", "DON OCTAVIO SAS", "MACANA SAS", "GUASIMO SAS", "BENGALA AGRICOLA S A S", "AGRICOLA PALMA REAL SAS", "DOAGRO SAS", "AGRICOLA SUGAR CANE SAS", "INVERSIONES AGROPECUARIAS DEL VALLE SAS", "CAÑAS Y SERVICIOS DEL VALLE S.A.S.", "AGRICOLA CAÑA DULCE S.A.S", "SERVICIOS AGROMECANICOS DE OCCIDENTE SAS SERVIAG", "RODRIGO DIAZ GONZALEZ S A S", "LIMONAR CONSTRUCTORA SAS", "DISTRIBUIDORA AGRUMCERES S A S", "INVERSIONES CHIALLO SAS", "INSUMOS REBOLLEDO SIOUFI CALI SAS", "CENTRO LOGISTICO DEL PACIFICO CLIP  SAS USUARIOS", "AGROCABAL S A S", "AGROVILELA SAS", "ICATCOL S.A.S", "GENETICA Y BIOTECNOLOGIA AGRICOLA DEL PACIFICO S", "HACIENDA PASO ANCHO SAS", "APLIVALLE SAS", "INVERSIONES PORTUGAL DE PIEDRAS SAS", "NUCLEO QUIMICO SAS", "CULTICAMPO SAS", "AGRIPORT GROUP SAS", "BIO ORGANICS DEL VALLE SAS", "FONDO INMOBILIARIO SAS", "VECAL CAPITAL SAS", "FALS INVERSIONES S.A.S", "MONTEALEGRE GARRIDO CARLOS HERNAN", "REYES CARO CARLOS FERNANDO", "CADAVID PALMA CARLOS FERNANDO", "TANAKA MARTINEZ SAMUEL EDUARDO", "MARTINEZ BAHOZ ALVEIRO", "ORTIZ MOSQUERA MIGUEL ANGEL", "VELEZ RACINES JOSE LUIS", "CURE OREJUELA PIERRE"], "Diana Saa": ["GIRALDO PILCUE OMAR EDUARDO", "YULE RIVERA FANERY", "COLLAZOS VEGA JULIAN ANDRES", "GARCIA MARTINEZ MARIA VIRGINIA", "SILVA MUÑOZ ANDRES FELIPE", "CARABALI HERMES ESNIR", "TEGUE VIVEROS EDIDSON", "BUENO CONDA JOSE ALDEMAR", "BOSSA VERA JIMMY ARMANDO", "JIMENEZ LOPEZ LUIS FERNANDO", "MESU UZURIAGA FREDIS ANDRES", "ANGEL TERREROS JAIME", "LUCUMI PENA RODRIGO", "LEONEL COLORADO OREJUELA", "PEÑA CANCHIMBO JOSE IVAN", "DAVILA JOSE CARLEY", "PEÑA CHOCO WILIAN", "GOMEZ MINA JANIER", "CONDA NOSCUE ANDRES JULIAN", "NIEVA RENGIFO JHON ALEXANDER", "MEDINA RESTREPO CRISTIAM FERNANDO", "MEDINA GONZALEZ HARRY ANTONIO", "MINA DIANA PATRICIA", "HILAMO CASO LUIS CARLOS", "YUNDA PENCUE JERSON JHOVANY", "GONZALES ILAMO HEIDY CAROLINA", "SECUE PAVI CRISTOBAL", "PACUE DAGUA FRANCISCO JAVIER", "MENSA SECUE MARIBEL", "TORRES CARDONA CAROL LLISNAY", "MECHA MONTANO OLGA MABEL", "YULE ILAMO YOLANDA", "DAGUA HILAMO EYDER MANUEL", "CORPUS MORANO BERTHA ELENA", "FINCE DAGUA JENIFER NATALIA", "BOHORQUEZ CALDERON LAURA ISABEL", "RIVERA FERNANDEZ JUAN JOSE", "CAICEDO ZAPATA OSCAR MARINO", "ZAPATA UZURIAGA JAVIER", "VELASCO GUZMAN HUMBERTO", "DAGUA CAMPO MILCIADES", "JIMENEZ MILLAN WILLINTON", "CESPEDES NIETO ERIK", "MORENO MESA NESTOR HERNAN", "ORTIZ ALVAREZ ALEXANTHER", "BELTRAN DELGADO JOHANM STEVEN", "MILLAN ARDILA ANDREA", "DONCEL YELA KEVIN", "LOPEZ TRUJILLO LEONARDO ANDRES", "MINA SALINAS LEYDI CONSTANZA", "CONDA QUIGUANAS PABLO GUSTAVO", "ESPINOSA CALDERON JUAN FERNANDO", "VALENCIA COLLAZOS ISRAEL ALEXIS", "GARCIA GONZALEZ ANGELICA VANESSA", "GARCIA MARTINEZ MARIA ANDREA", "PUERTA POLANCO LUISA FERNANDA", "PUERTA POLANCO CARLOS IVAN", "PANTOJA GOMEZ CAMILA", "LOPEZ CARDENAS ALIRIO", "RIVERA VERA LIZETH MARCELA", "VELASCO ORDOÑEZ JUAN CAMILO", "JIMENEZ YANDUN HERNANDO", "LEDESMA ESCOBAR BERNARDO", "PELAEZ CALDAS CARLOS ALBERTO", "VILLEGAS IBAÑEZ GUSTAVO ALBERTO", "MADRINAN CALDAS CESAR ALFONSO", "ENRIQUEZ GOMEZ HECTOR MARIO", "MADRIÑAN GUTIERREZ ESTEBAN", "LASSO CORTES JAIR ALBERTO", "PRADO TERREROS OSCAR CESAR", "MOLINA SANCLEMENTE RAMIRO", "BENITEZ BUENO HUMBERTO FRANCISCO", "VIVEROS PENA CRISTOBAL", "GARCIA ROJAS CARLOS ALBERTO", "BELALCAZAR GUTIERREZ DANIEL JAVIER", "LORA GARCES ALVARO NICOLAS", "ZAPATA MOLINA ROMAN ALIRIO", "BOTERO DUQUE JUAN CARLOS", "RAMIREZ GIRALDO RAFAEL", "MONTANO ARANGO JAIRO", "PUERTA SERNA CARLOS ANTONIO", "LEMA VILLEGAS JESUS ANTONIO", "OLIVARES SAAVEDRA RODRIGO", "SILVA ARANGO GUSTAVO ADOLFO", "KURATOMI LUIS ALBERTO", "VALDERRAMA BURBANO JOSE CENEN", "FLOREZ MARMOLEJO JHONY", "NISHIKAWA YAMASAKI JORGE ENRIQUE", "QUINTERO PECUPAQUE VICTOR ENRIQUE", "BOLANOS BUITRAGO DARIO", "VELEZ GONZALEZ ALEJANDRO FELIPE", "SANINT PELAEZ RODRIGO", "CUERO SANCHEZ SOCRATES", "GARCIA ROJAS JORGE HERNANDO", "PRADO IRURITA HUGO", "ENDO ALVARADO RODRIGO", "MADRINAN GUERRERO RODRIGO", "RODRIGUEZ EDINSON", "SILVA POLANCO JUAN BAUTISTA", "RAMIREZ RENGIFO YELBY", "CABRERA SANCHEZ ANDRES", "ZULUAGA JARAMILLO JUAN FERNANDO", "CARABALI OSCAR MARINO", "RESTREPO RESTREPO JAIME", "DELGADO MAÑUNGA JESUS NORDY", "BRAVO RODRIGUEZ HUMBERTO", "ANGOLA ARROYO EDIL", "RESTREPO RESTREPO EDWIN", "ZAPATA CIFUENTES DANIEL", "CAMPO CAMPO LEONARDO", "OCORO SAAVEDRA ANSELMO", "MOSQUERA RODRIGUEZ CARLOS ARTURO", "RAMOS MANRIQUE ARNUBIO", "ALMAGRO ORTIZ RICARDO", "CERON ALVIS RAMON", "CICHACA CAICEDO ALEX YESID", "FRANCO NAVARRO JUAN FERNANDO", "VELEZ GONZALEZ GUILLERMO", "PULGARIN ARANGO YLLINO ANDRES", "LOPEZ PANIAGUA CESAR JORGE", "NAVIA ASTUDILLO GILBERTO", "CAICEDO SOTO JULIAN CIRO", "CATACOLI DE VALENCIA ESTER YFANY", "RAMOS DAGUA MARIA EDILMA", "GOMEZ DIOLIVAR", "GONZALIAS BRAND MARGARITA", "ESCOBAR MERCEDES", "PEÑA MINA MIRELLA", "MERA DE BANGUERO MARIA ORSANA", "AGUILAR CHARA ROSA AMELIA", "VELASCO GOMEZ CARMEN ELENA", "LASSO GIL ANA MERY", "PEÑARANDA CANCHIMBO MARIA DEL CARMEN", "PEÑA MINA CLARA INES", "YUGUE PILLIMUE TERESA", "ZAPATA REYES MARIA OLIVA", "GARCIA BARONA LILIANA", "RAMIREZ MAFLA ZULAY", "LASSO CARVAJAL DILIA MAR", "ZAPATA JUVENAL", "POSSU CONU JOSE OLIVER", "MORENO SAMUEL", "LASSO CARABALI JOSE DUVER", "BANGUERO JOSE ERNERI", "ROJAS DE GARCIA MARIA DIVA", "MULATO CESPEDES PAOLA ANDREA", "QUINTERO PECUPAQUE ANA MILENA", "MUNOZ OLAVE ROSA JULIA", "ORTIZ CAICEDO NAYDA YOLANDA", "CABAL BERMUDEZ OLGA LUCIA", "MORENO SANCHEZ FRANCINE", "HILAMO CASO BLANCA ESNEIDA", "LUCUMI JIMENEZ MARTHA LUCIA", "BARNEY DE SILVA AMALIA", "PARRA GARCIA ASCENSION", "BOTERO PULECIO ALICIA", "DUQUE BOTERO BENIGNA", "NAKAMURA CHACON ESTELLA", "PRADO RESTOVICH LUZ CONSTANZA", "POLANCO TAMAYO ALBA DEL ROCIO", "MOSQUERA DE CUENCA AURA EMMA", "CORTES BERMUDEZ PIEDAD", "RESTREPO CARDONA CLAUDIA LORENA", "BELTRAN MOSQUERA MARIA CRISTINA", "MARTIN FRANCO MARIA TERESA", "GUZMAN ARANGO PATRICIA ESCILDA", "CORIAT PELAEZ MARIA XIMENA", "VELASCO GOMEZ ANGELA MARIA", "BERMUDEZ GARCIA LILIANA", "PAZ MORENO GLADYS", "MORENO ORTIZ GLORIA ESTELLA", "MARTINEZ RONDON MARTHA HELENA", "MINA ZAPATA DERLY", "PELAEZ DE CONSUEGRA CLARA EMMA", "CARABALI DE ZAPATA MARIA UBERSILA", "GARCIA RIVERA MARIA CRISTINA", "CARDONA LOPEZ JACQUELINE DIPONTI", "CARDONA RESTREPO JAIME DE JESUS", "LASSO ZAPATA JOSE ELIAS", "MOLINA FLOIMIR", "MORENO BANGUERO ATANAEL", "LUCUMI CANDELO HEDILBERTO", "MOSQUERA VIDAL ARBEY", "URRUTIA POSU JHON FREDY", "VILLEGAS VIETMAN ERASMO", "GOMEZ ALVAREZ ARNOLDO", "MEDINA MEZU JAIME LUIS", "MEDINA MEZU JAIRO ALBERTO", "CANCHIMBO CUENCA GEOVANNI", "CANCHIMBO COLORADO OSWALDO", "CARABALI AGUILAR OVIRNE", "PENARANDA MEDINA RAFAEL", "MARIN RUIZ MAURICIO", "ALTAMIRANO JEREMIAS", "CAMBINDO MOSQUERA EDUIN", "PILCUE CAMPO ANA ALICIA", "TOMBE TALAGA NORY", "UL AVIGAIL", "VELASCO TAQUINAS ROSA MARLELLY", "CONDA NOSCUE ADRIANA MARIA", "MORALES GUTIERREZ BERTHA PATRICIA", "CHARRY HOME OLGA LUCIA", "MUNOZ OLAVE DIEGO", "REBOLLEDO OSPINA ALBERTO JOSE", "ARBOLEDA CASTILLO JOSE ARBEY", "VARELA ROSAS OSCAR JAIRO", "TEGUE LAZO MARCO TULIO", "MOSQUERA VASQUEZ FREDDY", "LUGO RENTERIA ANGEL LIEL", "GARCIA QUINTERO OSCAR DE JESUS", "CONDE NUÑEZ YIMMY", "BECERRA VELEZ NILTON FABIAN", "VALDERRAMA VARELA EDUARDO", "ORTEGA VILLEGAS LUZ DARY", "BUSTAMANTE RODRIGUEZ MARTHA YOLANDA", "ORTIZ QUINTERO MARLEN", "MEZU ZAPATA FABIO", "CAMAYO CAMAYO EDWIN", "CONDA IPIA ORLANDO", "GIRALDO BOCANEGRA RAFAEL", "YEPES ROJAS HECTOR ALEJANDRO", "ALYC S A S", "ATAN S.A.S.", "LAVARSE Y CIA S EN C", "PROFRUTALES SOCIEDAD POR ACCIONES SIMPLIFICADA", "AGROPECUARIA EL MANGO SAS", "LOS CAMBULOS SOCIEDAD POR ACCIONES SIMPLIFICADA", "C M LADRILLERA SAN BENITO SAS", "GRUPO SAN LUIS SAS", "INVERSANCHEZ S A", "MARIA DEL CARMEN VELEZ Y CIA S A S", "GUZMAN R SAS", "DIATRAEA SAS", "RIVERA HNS Y CIA SAS", "GARCIA RINCON SAS", "CABACAL SAS", "COMERCIALIZADORA AGROPECUARIA EL AMPARO LTDA", "MGV SAS", "AVIDESA DE OCCIDENTE SA", "TRIADA EMA SA SUCURSAL COLOMBIA", "BELLAVISTA SAS", "INVERSIONES ROGAR S EN C S", "BRYON JEREMIAS Y CIA S EN C AGROPECUARIA NORTE Y", "INVERLLANES AGROGANADERIA SAS", "PARQUE INDUSTRIAL Y COMERCIAL TULUA JAKOB OLIVER", "AGROINCA S A S", "R.G. & CIA S.A.S", "HACIENDA LUCERNA SAS", "HEPRASA HERRERA Y CIA S.C.A. EN LIQUIDACION", "AGRICOLA BACHUE SAS", "CORPORACION COLEGIO COLOMBO BRITANICO", "GUZMAN D & CIA S A", "GUERRERO QUINTERO HERMANOS SA", "CRUZ LOSADA S A", "SALCEDO Y CIA SOCIEDAD AGRICOLA Y GANADERA LTDA", "HACIENDA LA FORTUNA LIMITADA", "EL CAIMITO SAS", "AGRITUR SAS", "VICTORIA GUZMAN Y CIA S EN C", "JUAN JOSE BORRERO B SUCESORES S A S", "COMPANIA AGRICOLA Y GANADERA LA BONANZA SAS", "MEJICO LTDA", "H FRANCO Y CIA S A S", "GARCES EDER S.A.S.", "BALSILLA S.A.S.", "GONZALEZ Y RINCON Y COMPANIA S EN C", "JAPIO GARCES Y CIA S C A", "INGENIO DEL CAUCA S A S", "MONSERRATE AJ SAS", "LA FELISA SOCIEDAD POR ACCIONES SIMPLIFICADA", "GRUPO CASABLANCA S A S", "CAICEDO MUÑOZ S.A.S", "MENDIOLA S A S", "INDUSTRIA AGROPECUARIA DEL VALLE SAS", "FERTILIZANDO SAS", "AGROAPLICACIONES SAS", "SUMAMOS DE COLOMBIA SAS", "EL YARI S A S", "GRUPO SANTA INES SOCIEDAD POR ACCIONES SIMPLIFIC", "AGRICOLA SAN VICENTE S.A.S", "DNA DISTRINAL SAS", "ARANGO VASQUEZ S A S", "LLANO VERDE AGROINDUSTRIALES SAS", "AGROPECUARIA LA CLEMENCIA SAS", "DRIM DUIT SAS", "AGRICOLA DIMONA S A S", "LACTEOS BITACO SOCIEDAD POR ACCIONES SIMPLIFICAD", "LA CHIPA SAS", "GAVIRIA SAS", "INSUMOS AGRICOLAS COLOMBIANOS SAS", "SERVITRACTORES BERBO SAS", "ABUNGARDI SAS", "N Y JM INVERSIONES SAS", "MIL AGROS ASOCIADOS S.A.S.", "COLOMBIAN ORGANICS SAS", "ARENAS Y TRITURADOS DEL SUR SAS", "ARANGO Y ASOCIADOS ROJAS SAS", "AGRO ARANGO Y PEREZ ASOCIADOS SAS", "ABBA GOLD SAS", "AGROINDUSTRIAL MAGDALENA ZOMAC SAS", "AGRONACER SAS", "CANNABIAN PHARMA SAS", "MARMOL AZUL COLOMBIA SAS", "FORTUNA MERCEDES SAS", "MEDICPLANT SAS", "AGROPECUARIA MAGDALENA SAS", "TIMAC AGRO COLOMBIA S.A.S.", "AGROFUTURO SERVICIOS Y SOLUCIONES ZOMAC SAS", "AGROPECUARIA HACIENDA TINAJA SAS", "AGROKOPEK SAS", "AGRICOLA LA REAL ZOMAC SAS", "AGROINVERSIONES LA CRUZ SAS", "AGROMARCAÑA ZOMAC SAS", "AGROINVERSIONES EL COFRE SAS", "KURANAKA S.A.S", "CADAVID GRAFFE SAS", "BURGO GE SUCURSAL COLOMBIA", "LPI COLOMBIA SAS", "APEXCO SAS", "MORDORO SAS", "GUAYCORAL SAS", "AGRANNA SILVA SOCIEDAD POR ACCIONES SIMPLIFICADA", "CBH VC S.A.S.", "RUNTZ SAS", "GRUPO FEJ SAS", "UNION TEMPORAL FINCAS SUR", "INNOVAGER SAS", "HERBI-TECH S.A.S.", "CESPEDES RIOS EDER YAMID", "CALDAS AREVALO NICKY", "RODRIGUEZ AYALA JHONNY ORLANDO", "RICARDO POLANCO TAMAYO", "VIDAL PENARANDA RENE", "PERDOMO CHILHUESO ARMANDO", "PELAEZ GOMEZ JUAN CARLOS", "GIRALDO VALENCIA JUAN CARLOS", "FIGUEROA OSORIO GONZALO", "LIPONS PALCO ELIBERIO"], "Milena Franco": ["VALENCIA RAMIREZ ALBARO", "OREJUELA ARTURO JEAN PAUL", "GIRON VASQUEZ ANDRES FELIPE", "LIBREROS WALLENS CAMILA", "RODRIGUEZ PEREZ MANUELA", "SIERRA VARGAS JESSICA ANDREA", "GIRALDO GIRALDO CARLOS ERNESTO", "GUERRERO COBOS DEISY JOHANNA", "NEIRA CEBALLOS RODRIGO", "VALENCIA VELEZ DAIRO ANDRES", "HENAO PLAZA YACKELINE", "JARAMILLO MUÑOZ JUAN PAUBLO", "PINEDA CASTAÑO ANTONIO DE JESUS", "SANCHEZ SANCHEZ JHON FREDY", "MEJIA OSPINA GILDARDO", "VARGAS TAQUINAS ALEXIS", "HOYOS ALVAREZ CARLOS ALBERTO", "RODRIGUEZ BOTERO DANIELA", "SERNA VILLADA DIEGO ARMANDO", "OSORIO CADAVID ADRIAN MAURICIO", "LONDOÑO BASTO SERGIO", "VELEZ CASTILLO JORGE LEONARDO", "NARVAEZ BARONA MARIA ALEJANDRA", "FERNANDEZ PARRA MONICA ALEXANDRA", "QUINTERO BISCUE YHON JAIRO", "DELGADO RESTREPO OSCAR MAURICIO", "DELGADO ROJAS VICTOR MANUEL", "LEDESMA VALENCIA JUAN FELIPE", "SANDOVAL YUSTI JUAN PABLO", "SOSA SOSA DAVID", "LEDESMA VALENCIA ALVARO JOSE", "ARISTIZABAL IDARRAGA CARLOS ANTONIO", "ESTRADA MARTINEZ HECTOR FELIPE", "ARISTIZABAL OSSA JUAN CARLOS", "BASTIDAS PEREZ JOHNATHAN", "LOPEZ VALENCIA GUSTAVO", "BERMUDEZ RAMOS JOSE HUMBERTO", "SANCHEZ JHON JAIRO", "CASTAÑO AGUIRRE RODOLFO", "GONZALEZ LOPEZ CARLOS ALBERTO", "SALAZAR GUTIERREZ FRANCISCO JAVIER", "ZUÑIGA MOLINA JACK HARRY", "VELASCO MONTOYA EDGAR ANTONIO", "REYES TENORIO VICTOR MANUEL", "GOMEZ ESCOBAR JESUS MARIA", "SALAZAR ROLDAN MARCO ARBEY", "SAAVEDRA AULESTIA JULIAN", "MONTOYA HERNANDEZ WALTER", "GONZALEZ BOTERO JUAN VICENTE", "BUENO SALAZAR VICTOR JULIO", "ARAGON CRESPO JUAN PABLO", "GONZALEZ BOTERO FERNANDO JOSE", "SAAVEDRA AULESTIA JUAN FERNANDO", "VINASCO ACOSTA HEBER", "ARANGO CAMPO ALEJANDRO", "VELASCO PARDO FERNANDO", "GUTIERREZ SANCHEZ EDUARDO ANTONIO", "SUDUPE JIMENEZ CARLOS DIEGO", "CALDERON COLLAZOS GONZALO", "AVENDAÑO BLANQUICETH RAFAEL ENRIQUE", "ZULUAGA HENAO GERMAN", "ESPINOSA CRIOLLO JUAN ALBERTO", "MONTOYA FEIJOO GILBERTO CLEMENTE", "OLIVARES SAAVEDRA JORGE LUIS", "ZULUAGA HENAO GERMAN", "RINCON BUITRAGO NOLBERTO", "ORTEGA MELO JOSE ROMAN", "ARAGON CORREA JOSE JAVIER", "PRADO RESTOVICH RAFAEL FRANCISCO", "DOMINGUEZ ESCOBAR GUSTAVO ADOLFO", "CADENA BOTERO LEONARDO", "QUINTANA HOLGUIN JOSE LUIS", "TABARES VALENCIA EDGAR", "CASTAÑO COLORADO JOSE REINEL", "RODRIGUEZ PALOMA MIGUEL SALVADOR", "CORRALES SANCHEZ ROSALINO", "BRAND NUÑEZ LUIS FELIPE", "CAMPO MARTINEZ SEGUNDO RAMON", "ARANGO URIBE GERMAN", "QUINTERO ESPINOSA WILLIAM", "MEJIA AZCARATE CARLOS EDUARDO", "DOMINGUEZ URDANETA CARLOS", "MURILLO BARONA EDGAR HUMBERTO", "SEGURA AYALA MANUEL JUVENAL", "ECHEVERRI AZCARATE VICTOR", "GUZMAN PIEDRAHITA JORGE EDUARDO", "SAAVEDRA TIGREROS CARLOS ALFONSO", "BORRERO CALERO VICENTE", "ASTUDILLO TIGREROS JOSE MARINO", "OREJUELA SANDOVAL EMILIO ALFONSO", "MOLINA CABAL JORGE FERNANDO", "MOLINA ECHEVERRI CAMILO JOSE", "MORA QUINONEZ LUIS ALFONSO", "VERA MUNOZ DIEGO FERNANDO", "GARCIA ECHEVERRY ANDRES MAURICIO", "GARCIA ECHEVERRY JUAN FERNANDO", "CORTES GRUESO ESTEBAN", "PUCIL CABRERA JHON FREDY", "LOPEZ VICTORIA HAROLD", "ROJAS GIL ALIVO ANTONIO", "DURAN MENDOZA EDISON", "GONZALEZ CASTAÑO ANTONIO JOSE", "BENEJAM SYDOW LUIS EDUARDO", "URIBE RIVAS MAGDALENA", "GOMEZ DE PINEDA ANA DOLORES", "OCAMPO ORTIZ JOHN JAIRO", "MONCADA GRAJALES MARIA ROCIO", "BLUM ROJAS GRACIELA", "BONILLA OCAMPO BENJAMIN DE JESUS", "SALCEDO CALERO GERARDO", "HENANDEZ MEDINA ARNUL ANTONIO", "MONTOYA HERNANDEZ CARLOS HUMBERTO", "GALEANO ZAPATA DUBERNEY", "PIEDRAHITA DE GUZMAN ELVIRA SOCORRO", "POSADA DE CAICEDO MELBA", "EMURA CONDE ALEXANDRA", "SEMAAN LINCE ANA MARIA", "CONDE DE EMURA SARA", "MOLINA DE SALCEDO ISABEL", "MOLINA SANCLEMENTE MARGARITA", "BARONA NIETO JOSEFINA", "BASANTE LOPEZ MARIA GLADYS", "RESTREPO HINCAPIE ADRIANA", "PRADA HOYOS GLORIA", "RINCON DE YAMIL LILIAM CONSTANZA", "LINCE CABAL CLAUDIA PATRICIA", "GONZALEZ CONDE ANA MILENA", "VARGAS BISCUE ELENA", "RAMIREZ PEREZ SHIRLEY LORENA", "ABADIA DE CAMPO GLORIA", "NISHI SIGUETOMI CELMIRA", "LOPEZ DE OCHOA ELBA", "HURTADO DE REYES BLANCA MIRELLA", "GIRALDO JACKELINE", "HERNANDEZ DE MONTOYA IRMA", "MENA TOVAR CATALINA", "HERRERA CASTRO BLANCA ELVIRA", "TASCON DE VALDERRAMA OLGA MARIA", "RAMON DE TANAKA MERCEDES", "OCHOA LOPEZ MARIA TERESA", "OCHOA DE TERREROS ANA LIDA", "OCHOA LOPEZ CILENA", "NISHI SABOGAL CLAUDIA ADELA", "MARTIN REVILLA MARIA TERESA", "LOPEZ NISHI MARIA FERNANDA", "AGUIRRE VEIRA MARGARITA", "LINCE CABAL CLARA MARIA", "AYERBE MUNOZ ADELAIDA MARIA DEL SOCOR", "OCHOA LOPEZ FLOR MARINA", "SUDUPE MOLINA ANA MARIA", "VALENCIA VALENCIA MARTHA CECILIA", "COBO MOLINA NATALIA", "SEMAAN TENORIO DORIS", "OTERO GONZALEZ MARIA DEL CARMEN", "TENORIO DURAN ANA LUCIA", "LINCE CABAL MARTHA ISABEL", "GUTIERREZ HERNANDEZ YOLANDA", "PINEDA GOMEZ MARGARITA", "RESTREPO DE ARANGO OLGA LUCIA", "PINEDA GOMEZ MARTHA AURORA", "WALTEROS QUINTERO MARIA XIMENA", "MONTOYA RODRIGUEZ PAOLA ANDREA", "CASTAÑEDA BISCUE MARTHA ISABEL", "ESCOBAR VASQUEZ IDALY", "SAAVEDRA AULESTIA MARIA DEL ROSARIO", "ARAGON CRESPO VICTORIA EUGENIA", "CEBALLOS GIL MARILU", "SAAVEDRA AULESTIA ANGELA MARIA", "FATAT HURTADO FARIDE", "SAAVEDRA MARTINEZ ANA MARIA", "SAAVEDRA MARTINEZ MARIA CLAUDIA", "ABADIA DE PECK FABIOLA", "BONILLA DE ZULUAGA MIRYAM", "PINEDA GOMEZ GLORIA", "PINEDA GOMEZ BLANCA", "PINEDA GOMEZ BEATRIZ ELENA", "PINEDA GOMEZ ANGELA MARIA", "LADINO LADINO HECTOR MANUEL", "TRUJILLO MARIN GLORIA PATRICIA", "ARIZA CARREÑO JULIO CESAR", "BARRAGAN AVILA GILBERTO", "RODRIGUEZ GARCIA LUIS ALBERTO", "ESCOBAR RENGIFO JAIME", "SAAVEDRA BECERRA BERNARDO", "ARANGO NAVIA ARMANDO", "SALAZAR JOSE GILDARDO", "ARANGO AYALDE JOSE LUIS", "HURTADO TENORIO DANIEL", "VARELA CIFUENTES BENJAMIN", "VARELA CIFUENTES HENRY", "ARANGO PRADO RAFAEL", "CANIZALES GUTIERREZ GUSTAVO ADOLFO", "OTERO MEDINA JOSE EDGAR", "REYES SATIZABAL OSCAR ALFONSO", "SATIZABAL TASCON RODRIGO", "GIRON SAAVEDRA AYMER", "RUIZ CACERES ORLANDO", "SATIZABAL JOSE MANUEL", "SATIZABAL TASCON JAVIER", "PEREZ CORREDOR JORGE HUMBERTO", "HURTADO ORTEGA ROOSEVELT", "DOMINGUEZ CALERO SATURNINO", "SANCHEZ RODRIGUEZ HELMAN", "GALLEGO FLOREZ LUIS GENARO", "HERNANDEZ ROJAS LUIS FELIPE", "CAMPO ABADIA MARIO GERMAN", "ARANGO AZCARATE CARLOS FERNANDO", "APARICIO PLAZA SIGIFREDO", "PORRAS BUENAVENTURA JOSE IGNACIO", "AGUDELO AGUDELO FREDIS ANTONIO", "DIAZ CASTAÑO JOSE DONEY", "NISHI SABOGAL CARLOS ENRIQUE", "ENRIQUEZ ECHAVARRIA JOSE ANTONIO", "PLAZA RIVERA MARIO ANDRES", "LEMOS LUGO JAIME", "GUZMAN GIL JORGE ELIECER", "LEMA ZULETA ALONSO", "FERNANDEZ PEREZ ARLEY", "ORREGO ROJAS JORGE ENRIQUE", "CAMPOS GARZON GLORIA NANCY", "HERNANDEZ GRACIA EDITH MILENA", "ROJAS VALENCIA KAREN JOHANNA", "MARQUEZ ROJAS ADRIANA", "RODRIGUEZ CORTES MARGARITA MARIA", "GARCIA POTES GLORIA CRISTINA", "OCHOA LOPEZ SANDRA YAZMIN", "NARANJO GOMEZ ISABEL CRISTINA", "LOPEZ NISHI YOKO JULIANA", "HOYOS ORTIZ PAULA ANDREA", "PECK III ROBERT BARTON", "REYES VALENCIA JOSE LUIS", "RESTREPO VILLA JORGE ALBERTO", "SERNA ARISTIZABAL JULIO ARGEMIRO", "ARISTIZABAL OSSA CARLOS ALBERTO", "GIRALDO JARAMILLO NELSON DE JESUS", "PINEDA GOMEZ JUAN ALBERTO", "PINEDA GOMEZ MARIO ANTONIO", "MINA JIMENEZ JOSE EUNISER", "LATORRE GOMEZ RAFAEL", "DE ANTONIO TORO MILTON GIOVANNY", "MEJIA AZCARATE Y CIA LTDA", "RENTERIA Y CIA S C A", "AGRODEC SAS", "AGROPECUARIA LA VENTURA SAS", "PROYECTOS CONSTRUCCIONES Y ADECUACIONES PROCOA S", "GUTIERREZ JARAMILLO HNOS Y CIA S EN C A", "AGRO ARCA SAS", "CONSTRUIR SA", "OSIRIS SAS", "SAGICO MEJIA S EN C SOC AGRIC GANAD IND CIAL", "JM SAAVEDRA Y CIA EN C", "ADOLFO ABADIA Y CIA S EN CS", "DISTRICONDES SAS", "INVERSIONES COVIN S A", "AGROINVERSIONES LA ESPERANZA SAS", "SARDI DE HOLGUIN Y CIA SAS", "SAN RAFAEL AGROPECUARIA LA SAS", "INVERSIONES AZCARATE ECHEVERRI S A S", "POTOSI SAS", "LOS GUASIMOS LTDA", "FUNDACION DEPORTIVA MANUEL CORREA VALENCIA", "TENORIO JARAMILLO SAS", "V E TENORIO Y COMPANIA SAS", "IBARGUEN ASPRILLA Y CIA S EN C", "YESENIA CC Y CIA", "TENORIO ANALDA Y COMPANIA S EN C", "ORISA SAS", "LF TORO MEJIA Y CIA EN C.A.", "ASOCIACION DE USUARIOS DE LOS RIOS AMAIME Y NIMA", "COMERCIALIZADORA CALLE Y CIA S EN C S", "POLLOS SARATANO LIMITADA", "SUCROAGRO SAS", "BLANCA MIREYA HURTADO DE REYES E HIJOS LIMITADA", "POLLOS ZAMORANO SAS", "VELASCO AYALDE SAS", "TASOCA S A S", "BEYCA SAS", "ALIANZA FIDUCIARIA SA FIDEICOMISOS", "SANTA REYES SAS", "SEMAAN LINCE JOSE FRANCISCO", "LLINAS HERNANDEZ PAULO JOSE", "MONTOYA RODRIGUEZ JUAN CARLOS", "CABAL Y COMPAÑIA LIMITADA", "CASTILLA AGRICOLA S A", "SOCIEDAD DE CULTIVOS AGRICOLAS SA", "HEREDEROS DE ANGEL MARIA CASTRO SA", "GRANJAS PARAISO SAS", "MAYAGUEZ SA", "DOMINGUEZ NAVIA SA", "SAN BERNARDINO BERG SAS", "CABAL RIVERA HERMANOS SA", "CAICEDO POSADA Y ASOCIADOS SAS", "AGRICOLA EL ONCE VICENTE BORRERO Y CIA SCS", "SOMBRERILLO Y CIA S A", "EPOCASA SA", "GUARDIOLA OSPINA E HIJOS LTDA", "AZCARATE ECHEVERRI ASOCIADOS S EN C", "AGROPECUARIA SILCA S A S", "BERERCY S A S", "AGRICOLA GUACARIES SAS", "INVERSIONES RAMIREZ MONCALEANO Y CIA SCA", "HACIENDA LA ARBOLEDA LTDA", "HACIENDA BALSORA SAS", "YABE Y CIA S C S", "SOCIEDAD AGRICOLA LA CEIBA SAS", "HACIENDA SANTA ROSA S A", "INGENIO PROVIDENCIA S A", "VILLA CLARA S A S", "AZCARATE ARANGO S A S", "RACINES VICTORIA HERMANOS SOCIEDAD POR ACCIONES", "AVICOLA SANTA RITA S A S", "BENEMERITO CUERPO DE BOMBEROS VOLUNTARIOS DE GIN", "ATENEA AGRICOLA SAS", "AZCARATE MATERON S.A.S", "AGROPECUARIA EL DIEZ S A S", "BELLAVISTA CAMPO S A S", "LUIS IGNACIO LOPEZ R Y CIA", "O SAAVEDRA L Y CIA S EN C", "MIGUEL MARTIN Y CIA SAS", "E S E HOSPITAL DEL ROSARIO", "AGROPECUARIA MOLINA MEJIA S A S", "FRUTAMON E U", "AGRICOLA EL ROBLE SOCIEDAD POR ACCIONES SIMPLIFI", "HACIENDA ALBION SA", "GUADUILLA S A S", "MEJIA HOYOS E HIJOS & CIA SAS", "RUIZ MADRID Y CIA S C A CIVIL", "AGROPECUARIA MAGARO SAS", "AGROPECUARIA PAMPAMA S A S", "INVERSIONES SAN CLEMENTE RP S A S", "HACIENDA BELGICA SUCESORES SAS", "SINCRONIA SAS", "BIENES Y MAQUINARIA SAS", "BUCAGRO SAS", "COMERCIALIZADORA DE ACABADOS DE OCCIDENTE SAS", "AGROINDUSTRIA EL TESORO SAS", "INVERSIONES MEJIA2 SAS", "GRUPO EMPRESARIAL B&M SAS", "PORT SERVICE SAS", "AVICOLA LA AURORA SAS", "AGRICOLA EL DIAMANTE JJ SAS", "COMERCIALIZADORA INTERNACIONAL AGRICULTURA BIOLO", "DISEÑO, CONSTRUCCIONES Y BIENES RAICES SAS", "PACIFICA  S A S", "CABALINDE S A S", "ESCOBAR POSADA E HIJAS S A S", "FERRETERIA UNION LEAL SAS", "EXPRESO EL CERRITO SAS", "INVERSIONES AGROCANA S A S", "DISTRIMARCAS FT SAS", "ARIS TEXTIL SAS", "GLORIA CASTRO CRUZ Y CIA S EN C S", "ECOLINE AGRICOLA SAS", "CORSAVIDA", "AGRICOLA LA NAVARRA SAS", "INVERSIONES RENGIFO CABAL SAS", "SUPERMERCADO CASABLANCA SAS", "J&P ASESORIAS TECNICAS AGROPECUARIAS SAS", "MESA CUADRADA SAS", "ISCONCIVILES SAS", "MORALTRA SAS", "VELEZ HERNANDEZ SAS", "VIVIAN GUTIERREZ SAS", "ASOCIACION DE PESCADORES Y AGRICULTORES  LA FORT", "ROCANO SAS", "BIOQUIMS SAS", "LAPILO SAS", "AGRICOLA RIO GUABAS  SAS", "CONSTRUCCIONES MARIO REYES SAS", "INVERSIONES AGROPECUARIAS C Y G SAS", "LA ELSA AGROPECUARIA SOCIEDAD POR ACCIONES SIMPL", "AGRICOLA L Y M SAS", "CIBELES PHARMA S.A.S.", "ENERGIAS RENOVABLES DEL VALLE SAS E S P", "AGROFRAYLE SAS", "AGRICOLA EL BRILLANTE SAS", "FITODERIVADOS DE COLOMBIA SAS", "DNA ORGANICS SAS", "AGROCHILAGUAS SAS", "CULTIVOS HMJ SAS", "CENTRO LOGISTICO CLIP CL SAS ZOMAC", "DUNGER SAS", "AGRO AMARALES S.A.S.", "VERDEMARGLOBAL S.A.S", "INVERSIONES 7 A SAS", "VIDA AGROPECUARIA SAS", "BLUMENAU DEL PACIFICO SAS", "GRUPO EMPRESARIAL GOAL SAS", "MULTISERVICIOS AGRO SAS", "AGRO SAGA SAS", "G&G GREEN GOURMET S.A.S.", "AGROLABORES MEDINA S A S", "ROUSE SAS", "MASAICA SAS", "BIENES LA UNION SAS", "LLANCAR SAS", "EXPORTACIONES E IMPORTACIONES GRANJA B SAS", "VELTEN SAS", "LICUSATI SAS", "AGROPECTUS SAS", "AGROMADRONAL VERGARA DIANA S.A.S.", "CHAGUALOS Y COMPANIA SAS", "AVICOLA IRMA HERNANDEZ DE MONTOYA SAS", "TUSCANY LEATHER SAS", "MASUNCA SAS", "AGROGI SAN JOSE SAS", "AGROVIDA VALLE SAS", "FSVS SAS", "LA ALQUIMIA INVERSIONES SAS", "PROYECTO L&S SAS", "ACROLATAM SAS", "CONTRACHAPADOS Y RESINAS EL LIBANO SAS", "MAVERCOL SOCIEDAD POR ACCIONES SIMPLIFICADA", "GRANOS Y ROJOS DEL VALLE SAS", "AGROKAMP SAS", "ROMANCERO SAS", "FRUTO SAGRADO SAS", "HERRERA VALDEZ ALPIDIO", "BRAVO ORTEGA DEIBY ALEXANDER", "GUACA BURBANO LUIS ENRIQUE", "CABRERA OSPINA CESAR AUGUSTO", "LOPEZ NISHI ALVARO JOSE", "TANAKA RAMON MARIANO TOYOKICHI", "CARREJO PERDOMO WILFRADO", "SANCHEZ RONCANCIO ELKIN GEOVANNI", "LASSO PEREZ FABIAN ANDRES", "CREACIONES STUDIO ELIOX", "TAFUR ALZATE MIGUEL ANDRES", "RESTREPO OSORIO NORBERTO", "VALENZUELA DUARTE CELSO", "CALLE PAREJA PEDRO LUIS", "MONTOYA GARCIA WALTER FELIPE", "CASTILLO WILLIAM", "NARANJO ECHAVARRIA NORBEY"], "Angie Franco": ["ESCOBAR BORRERO JUAN FELIPE", "CASTAÑO ECHEVERRI GERMAN", "LONDONO SAAD JUAN CARLOS", "SAAD IZA ALVARO JOSE", "SAAD IZA ANDRES FELIPE", "LOPEZ SILVA DIEGO HERNANDO", "KURATOMI HERNANDEZ ALEJANDRO", "HURTADO CASTILLO LUCIO ALFREDO", "REYES TAMAYO NESTOR RAUL", "GUTIERREZ HEREDIA MONICA", "CAICEDO NIAZA ANGELA MARIA", "LEDESMA BERMUDEZ JOSE RICARDO", "ERAZO OCAMPO ALEX JUAN PABLO", "ESCOBAR BORRERO MARIA PAULINA", "NOGUERA ORTEGA JUAN PABLO", "LEON GUERRERO ERMINSUL", "GONZALEZ JIMENEZ GUILLERMO", "JARAMILLO ZUNIGA JULIO CESAR", "ARAGON CRESPO CARLOS HERNANDO", "GOMEZ JARAMILLO CARLOS ALBERTO", "GOMEZ TRUJILLO GERMAN", "ARANGO GALLEGO GABRIEL DE JESUS", "GOMEZ JARAMILLO JOAQUIN EMILIO", "GOMEZ JARAMILLO FRANCISCO JAVIER", "TRUJILLO LONDONO CRISTIAN HERNAN", "ESCOBAR ROLDAN CARLOS ALFONSO", "NISHI SIGETOMY ARMANDO", "YOUNG GOMEZ JAIME", "ROJAS SANCHEZ REINELIO", "PENARANDA URRIAGO RICARDO", "HERRERA BARRERA ANGEL", "URREGO GARCIA REINEL HORACIO", "RUBIANO VIVAS LUIS FERNANDO", "DUQUE PEREZ LUIS FERNANDO", "MEJIA QUINCHIA EYDER ALONSO", "GARCIA VALDES GUILLERMO", "TASCON TASCON JOSE MANUEL", "ROJAS SAAVEDRA ALBEIRO", "BONILLA GIL GILIVER", "BARBOSA ARIAS IVAN", "VARGAS FORERO JOSE JULIAN", "FERNANDEZ VALLEJO AUGUSTO", "FERNANDEZ VALLEJO SANTIAGO", "SERNA ALVAREZ MIGUEL ANGEL", "HINESTROZA UPEGUÍ JUAN PABLO", "BARRETO HENAO SANTIAGO", "URIBE LONDONO VICTOR JULIO", "MUÑOZ AGREDO MADELAYNE", "VALDERRAMA RUIZ DIANA MARCELA", "BOTERO AULESTIA MARIA PIEDAD", "RAMIREZ VILLEGAS ARMANDO", "NARANJO DE NARANJO ALBA INES", "SILVA DE LOPEZ ALICIA", "ARIAS RENDON MARIA DEL CARMEN", "ARIAS DE BARBOSA MARIA TERESA", "MOLINA DE ECHEVERRI INES ELVIRA", "YOUNG GOMEZ ESPERANZA", "GOMEZ FRANCO MAGDA STELLA", "PINEDA DUQUE ANA GERTRUDIS", "GOMEZ JARAMILLO MERCEDES", "GOMEZ BOTERO ANA MARIA", "GOMEZ BOTERO MARCELA", "GARCIA MILLAN MARIA DEL MAR", "ARANGO ESCOBAR MARIA EUGENIA", "NERY YENITH PAEZ MARIN", "MARMOLEJO URDINOLA MARIELA", "ARAGON CRESPO ELIANA MARIA", "RAMIREZ GARCIA CARMEN LUCIA", "RAMIREZ GARCIA ANGELA MARIA", "GOMEZ JARAMILLO ALBA LUCIA", "TABARES FERNANDO", "SABOGAL PEÑA JOSE REINALDO", "CASTIBLANCO LOPEZ ALFREDO", "VALDERRAMA VARELA GILBERTO", "MILLAN MAYOR BERNARDO", "HERRERA JARAMILLO DIEGO FERNANDO", "HOLGUIN SIERRA ANA MILENA", "BARBOSA ARIAS ANA LUCIA", "VELEZ ALEJANDRA", "GRISALES CAICEDO CARMELINA", "ESCOBAR SANTA GLORIA PATRICIA", "MIYATA KURATOMI ANDREA", "HAROUN DE IZA IRMA MICHEL", "IZA HAROUN AIDA KATHERINE", "IZA HAROUN ANA MARIA", "IZA HAROUN LODY OLGA", "VON BREMEN VOGT JOHAN OTTO CARL", "GOMEZ BOTERO MARIANA", "AGUDELO CASTANO JORGE IVAN", "SIERRA AGUDELO CARLOS MARIO", "HUERTAS COTES RICARDO ANTONIO", "SUMMAR PROCESOS SAS", "SAN MATEO Y CIA SAS", "INVERSIONES BURITICA SAS", "GONAREZ Y CIA S EN C", "FOLIARES COLOMBIANOS FOLCOL S A S", "RICARDO Y CIA SAS", "MORALES ABRIL FREDY GERMAN", "MARJUMAR SAS", "INVERAGRO SAS SOCIEDAD POR ACCIONES SIMPLIFCADAS", "ILIAN Y ARENAS CIA SAS", "FRUTAS TROPICALES S EN C", "FRUTALES LAS LAJAS S A", "TRUJILLO GAVIRIA ALFONSO LEON DE JESUS", "SEMILLAS DEL PACIFICO SAS", "SEMILLAS KAMERUN SAS", "RAMON BERNAL Y CIA SAS", "HACIENDA LA CANDELARIA", "RIOPAILA AGRICOLA S A", "SUCESORES DE HORACIO GARCIA S A S", "ARISOL SAS", "NORBERTO PALOMINO ROJAS Y CIA S C S", "AGROIZA SAS", "CARLOS YOSHIOKA & CIA S C S", "PEDRO NEL MORALES SAS", "ARAUJO MORALES AGROCOMERCIAL SOCIEDAD POR ACCION", "AVIAGRO JARAMILLO AGUILERA SAS", "AGROINDUSTRIALES DEL OESTE SAS", "CAMPO FERAZ SA", "OCIMAC S A S", "TOMOVE S EN C", "PRODUCTORA AGRICOLA QUINTERO S.A.S.", "MANIMER SAS", "CRIADERO GRANADA SAS", "CRECER CULTIVOS SAS", "AGRITULUA SAS", "AGROPECUARIA QUINTERO Y HERMANOS SAS", "EFIGAN SA", "TRESORO S A S", "MAGAVIC SAS", "FRUTALES BABILONIA SAS", "AGRICOLA LA UNION S.A.S", "FRUTICOLA VALPARAISO POR ACCIONES SIMPLIFICADA", "GRANJA LA RESERVA SAS", "GANADERIA HACIENDA EL GUABITO SAS", "HACIENDA FLANDES S.A.S.", "HACIENDA SAMARIA SAS", "AGROPECUARIA TASORT SAS", "EARTH’S HEALING COLOMBIA S.A.S.", "AGRICOLA BUENA ESPERANZA SAS", "FLORIUS SAS", "SISTEMA CIRCULAR SAS", "INVERSIONES AGRICOLAS DEL VALLE SAS", "AGROINDUSTRIAS LA BERRAQUERA SAS", "ACCMA", "CADAVID E HIJOS S.A.S.", "AGUACATES EL ENCANTO SAS ZOMAC", "AGRO3 SAS", "CULTIVAGRO COLOMBIA SAS", "GUAYQUIRY SAS", "ECO LIMES SAS", "AGROPECUARIA LA MARIA HIJOS SAS", "ESSENTIAL LEAVES SAS", "CONCENTRADOS Y LACTEOS EL HATO TRADICIONAL SAS", "AGRICOLA SOLARI SAS", "VALLE GREEN COMPANY SAS", "SPIELER COLOMBIA S.A.S.", "TODO AGRO SEVILLA SAS", "GRUPO AGROINDUSTRIAL NOVATERRA S.A.S.", "CAMPO FUERTE S.A.S", "D.A.J SERVICIOS AGROPECUARIOS SAS", "MIKAN SAS", "VIVEROS BETESDA SAS", "D1 AGROPECUARIO SAS", "BLUEBERRY FIELDS SAS", "HAGRB SAS", "PUERTO SERVICANA SAS", "INVERSIONES AGROPECUARIAS LA BONANZA SAS", "ACKH SAS", "AGROMILLAN SAS", "BIOAPLICACION SAS", "CADENA RAMIREZ DIEGO JAVIER", "QUICENO DAVILA DIEGO FERNANDO", "MORENO MUNOZ JESUS DAVID", "GRAJALES GUECHE ANCIZAR", "GRAJALES GUECHE HECTOR FABIO", "TRUJILLO GIRON CAMILO", "HURTADO MOSQUERA ORLANDO", "BORJA QUIROGA MAURICIO", "GAVIRIA PEREZ ANDRES FELIPE", "MORENO PASTAS SERVIO EDMUNDO"], "Julio Bernal": ["DAZA BETANCURTH MARIANA", "BOTERO DREWS HORACIO AGUSTO", "MONTES SINISTERRA LINA ESMERALDA", "ROJAS BURBANO JOSE ENRIQUE", "GOMEZ BOTERO JUAN PABLO", "ORTIZ FIERRO MARLEN JOHANNA", "NOGUERA ESTRADA DAIRON DARWIN", "MARIN RIOS ESTEBAN", "GONZALEZ MORENO ALEJANDRO", "IGLESIAS TABORDA FRANK STEVEN", "GONZALEZ RIVERA LUIS FELIPE", "VELASQUEZ URIBE MONICA LIZETH", "HURTADO VASQUEZ JORGE EDUARDO", "HERNANDEZ ORTIZ RICARDO", "RENDON GONZALEZ EDUARDO ANTONIO", "RUIZ DORADO CARLOS ANDRES", "BENAVIDES MENESES ANA MILENA", "LOZADA SARRIA LUZ KARIME", "CAICEDO QUINTERO DAVID ALEXANDER", "ECHEVERRY GUERRERO MARTIN", "GONZALEZ ROJAS CAROLINA", "HOLGUIN MORENO ANA MARIA", "GONZALEZ MORENO EDWIN FERNANDO", "SIERRA ISAZA MANUELA", "SIERRA SERRANO JULIAN ANDRES", "NORENA GIRON ANDRES FELIPE", "DURAN CASTRO SANTIAGO", "DURAN CASTRO LUIS BERNARDO", "SOLANILLA MAFLA CESAR ALFONSO", "FLOREZ CAICEDO HERNANDO", "CASTRO GONZALEZ JULIO CESAR", "PEREZ PACHON JORGE", "DAZA CRUZ JESUS ANTONIO", "ESCOBAR VILLEGAS FERNANDO", "TAFUR OREJUELA EDUARDO JOSE", "LLANOS AYALA JAIME", "GONZALEZ BALANTA OLMER ERNESTO", "VARELA VILLEGAS GERMAN", "MUNOZ MONTES ORLANDO", "FLOREZ CAICEDO OSCAR", "QUINTANA GONZALEZ RAFAEL ANTONIO", "SALDARRIAGA GIL CARLOS ALBERTO", "ARBOLEDA NARDI JULIAN", "FRANCO VICTORIA DIDIER", "OCAMPO MONTENEGRO LUIS FELIPE", "NARVAEZ MOSQUERA HAROLD", "VILLA CARLOS ALBERTO", "VASQUEZ CEDENO ALFONSO", "REBOLLEDO SILVA DANIEL", "CAICEDO VICTORIA CARLOS ALBERTO", "VERA HERRERA JEISON JAVIER", "DAZA CRUZ FEDERICO ALEJANDRO", "CARVAJAL GONZALEZ JAIME", "TAFUR OREJUELA MARIA CLAUDIA", "CHUJFI DE HOYOS BLANCA", "LONDONO DE BOTERO MARIA AMPARO", "GARCIA CRUZ CICERON", "SALCEDO HERNANDEZ GUILLERMO", "ARBOLEDA NARDI VERONICA", "TELLO ESCOBAR MARLENE", "BUITRON MOLANO LADY ROCIO", "SIERRA SERRANO DIANA MARIA", "CAICEDO DE POTES MARIA NILIA", "OCAMPO DE ROJAS BLANCA NELLY", "BOTERO DE ISAZA LUZ MARIA", "DAZA DE ZANINOVICH LUZ CLARA", "MILLAN DE TRUJILLO ROSARITO", "MEJIA ARANGO BEATRIZ EUGENIA", "ISAZA BOTERO VICTORIA EUGENIA", "QUINTERO QUINTANA MARGARITA ISABEL", "QUINTERO QUINTANA MARIA CONSUELO", "FLOREZ CAICEDO MARIA LILIANA", "FLOREZ CAICEDO MARTHA LUCIA", "FLOREZ CAICEDO MARIA CLARA", "MORERA BENACHI MARIA MIREYA", "TAFUR OREJUELA FRANCISCO JAVIER", "SOLANO LEAL ANA CAROLINA", "NARDI MARIA TERESA", "AGROLAND DEL VALLE", "DAZA ARIAS CATALINA", "FLOREZ CAICEDO CARMENZA", "DAZA CRUZ MARIA HELENA", "PRINCE AMALE FAOUZI", "BOTERO LONDOÑO CAROLINA", "BOTERO LONDOÑO ADRIANA", "BOTERO LONDOÑO CAMILA", "LOZANO BALCAZAR NICOLAS", "PORTILLA DELGADO JESUS", "BARRERA MEJIA VICTOR HUMBERTO", "SIERRA MASSO JUAN PABLO", "USECHE VICTORIA JULIAN ANDRES", "MORENO SOSCUE JORGE IGNACIO", "HURTADO TRUJILLO HELMER FABIO", "CALERO ARANA MANUEL DE JESUS", "JIMENEZ TRUJILLO JUAN CARLOS", "PARRA PERDOMO PETALOZZI", "CASTAÑO AGUDELO ALBEIRO DE JESUS", "BARONA TASCON PEDRO NEL", "BEJARANO MENDEZ FERNANDO", "AGUDELO GUTIERREZ CARLOS ALBERTO", "DOMINGUEZ NOGUERA WILLIAM", "CASTRO OSPINA YOLANDA DEL PILAR", "RODRIGUEZ ESTEVEZ MARIA DEL PILAR", "CARDENAS RIVERA CLAUDIA LILIANA", "ISAZA BOTERO OLGA LUCIA", "DELGADO ZORRILLA ANGELA MARIA", "ISAZA BOTERO CARMEN ELENA", "CASTRO LONDONO MONICA", "CAICEDO ESTELA MARIA CLAUDIA", "ROJAS OCAMPO NELLY PATRICIA", "URIBE LONDONO JUAN FELIPE", "HOYOS GOMEZ ALVARO", "GUTIERREZ LLANTEN JOSE HUGO", "AGENQUIMICOS SAS", "INVERSIONES PALAU SAS", "INVERSIONES SANTA ANA LTDA", "GOLD TERRA Y CIA SAS", "A. J. RESTREPO Y CIA. S.A.S", "ANTONIO J RESTREPO & CIA SAS", "RESTREPO CRUZ Y CIA SAS", "DANIEL REBOLLEDO SILVA Y CIA SCS", "JAIME DORRONSORO TENORIO Y CIA S EN C", "CASTA PRODUCCIONES Y CIA SCS", "BLANCA NELLY DE ROJAS Y CIA SAS", "M I DAVILA Y CIA SAS", "COMPANIA CULTIVADORA DE GRANOS SA", "AGROASESORIAS EL CENCERRO S A S", "AGRA S A S", "CULTIVOS ASOCIADOS S A", "AGROVENTAS SAS", "AGRO LA HACIENDA SAS", "AGROPECUARIA DE OCCIDENTE S A", "SU PROVEEDOR QUIMICO PREFERIDO SAS", "QUIMICOS LA DIEZ MORALES NARANJO LTDA", "JOMISA S EN C S", "DEL ALBA SA", "TRUJILLO MILLAN CAMILO", "INDUSTRIAS ALIMENTICIAS EL TREBOL S A", "LA LINA SAS", "AGROMERCOL S A", "PRODUCTORA  Y COMERCIALIZADORA MJG S A", "COMERCIALIZADORA LA TRANQUERA SAS", "AGROINSUMOS S A S", "AGROPECUARIA SAN ANTONIO S A", "ESCOBAR ZUNIGA LIMITADA", "LA ALBANIA LIMITADA", "COOPERATIVA CAFICULTORES DEL SUR OCCIDENTE VALLE", "SEMILLAS VALLE S A", "DEGANADO SAS", "FERCON S A", "FAVAC INVERSIONES SAS", "MERCADEO SAS", "PRODUCCIONES AGRICOLAS CAVI S A", "ELECTROQUIMICA WEST S A", "AGRICOLA EL CEDRITO SAS", "BENEMERITO CUERPO DE BOMBEROS VOLUNTARIOS DE GUA", "INGENIO RISARALDA S A", "CARLOS SARMIENTO L  Y CIA INGENIO SANCARLOS SA", "INGENIO CARMELITA S A", "AGRICOLA EL PORVENIR LTDA", "AGROPECUARIA ROJAS Y CIA SAS", "FEDERICO ROJAS GOMEZ Y CIA SAS", "INVERSIONES AGROAMBIENTALES H & R SAS", "DURAN SANCLEMENTE Y CIA S EN C", "SOCIEDAD NATURAL SAS", "ESTACION LOS ALPES S A", "TEKALES Y CIA SAS", "TIERRACAM S A", "ISEMTA SAS", "ISEMFOR SAS", "CENTRO COMERCIAL DEL PARQUE SAS", "TIERRAS DEL SUR SAS", "CULTIVOS PRODUCTIVOS SAS", "LA CARRILERA Y LA ESMERALDA SAS", "AGRICOLA SAN JERONIMO S.A.S.", "INVERSIONES GANAGRICOL S A S", "COMPANIA AGROPECUARIA ARAGUANEY SAS", "TARIACURI S A S", "COLOMBAIA SAS", "SURTICANA S A  SOCIEDAD CIVIL", "ARTESANIAS Y VIVERO EL ROSAL SAS", "CENTRO AGRICOLA SANTA HELENA S A S", "CHURIMAL SAS", "AGROTODO DEL VALLE SAS", "PLANTAGRO VALLE LTDA", "APLICANA LA VIRGINIA SAS", "DISTRIBUIDORA GRUMERCO S A S", "SAMAN HERMANOS SAS", "GRANJA VERDE DEL VALLE S A S", "FRUGAN SAS", "GUILLERMO VASQUEZ CAICEDO SAS", "AGROINDUSTRIA E INVERSIONES ESPARTA S.A.S.", "COMERCIALIZADORA BARRAGAN Y SANTA LUCIA SAS", "GRARCO SAS", "CANAS VERDES SAS", "MIL AGRO DEL VALLE S A S", "FERTILIZANTES DEL VALLE S A S", "AGROCULTIVOS DE OCCIDENTE SAS", "AGRICOLA PORVENIR DEL NORTE SAS", "AGROCANAVERAL SAS", "AGROPECUARIA GUALANDAI SAS", "AFM TOPOGRAFIA SAS", "CANAMEDIO SAS", "AZCARATE CABAL SOCIEDAD AGRICOLA SAS", "AGRO FISH SAS", "INSUCAMPO DEL NORTE SAS", "TERRAFINA SAS", "COLOMBIANA DE SUMINISTROS AGRICOLAS Y PECUARIOS", "CUBIERTAS METALICAS TABARES SAS", "CITRICOS LA MONTANA SAS", "AGROINVERSIONES LA GALICIA SAS", "INVERSIONES AGROTERRA SAS", "AGRICOLA VICTORIA SAS", "INVERSIONES PALMASOLA SAS", "AGROVARIEDADES TRIPLE A SAS", "ALMACEN AGROPECUARIA LA GRANJA SAS", "KUVEL ASOCIADOS SAS", "GRUPO EMPRESARIAL SERVER SAS", "PAVAGRO SAS", "MUNDO AGRICOLA DEL VALLE SAS", "AGROEMPRESA LOS ROBLES SAS", "AGRICOLA AYG SAS", "AGROPINAS DEL EJE SAS", "AROMALES SAS", "PORCICOLA EMMANUEL SAS", "AGROINVEST COMPANY SAS", "NUTRISEM S.A.S.", "VERDURAS JT SAS", "DIMAISA SAS", "CENTRO AGRO DE COLOMBIA SAS", "ARAU SAS", "SERVICIOS AGRICOLAS LA CABAÑA SAS", "AGRICOLA DEL VALLE S.A.S.", "AGROPUNTO LA CASA DEL CAMPO SAS", "AGROVALLE INSUMOS AGRICOLAS SAS", "AGRICOLA RENACER DEL VALLE S.A.S.", "NORAGRO SAS", "CASA AGROPECUARIA EDEN SAS", "RODRIGUEZ ALFONSO JOSE ORLANDO", "DUQUE GIRALDO WALTER JAIR", "ALDANA RESTREPO GILBERTO", "CARO GOMEZ LUIS ARBEY", "DUQUE GIRALDO DAVID LEON", "CAICEDO ESTELA JUAN CARLOS", "ROJAS OCAMPO FEDERICO", "JARAMILLO JARAMILO JUAN CAMILO", "RUALES SALCEDO MARIO GUILLERMO", "SIERRA ISAZA MANUELA", "TRUJILLO MILLAN PABLO"], "Mauro Restrepo": ["GOMEZ ARIAS ISLEN MAURICIO", "HERRERA RAMIREZ EDWIN ESTEBAN", "ROBAYO TORO HEIDER ALEJANDRO", "QUINTERO USMA LAURA", "OSORIO VALENZUELA DIEGO", "SOTO HERRERA EMMANUEL PAULO", "RUBIO HUERTAS YEISON", "CARRILLO GIRALDO ALVARO FERNANDO", "VALENCIA TOBON EFRAIN", "LOPEZ AGUDELO LUIS GUILLERMO", "CASTELLANOS GALEANO JORGE IVAN", "PACHON VASQUEZ GUSTAVO ENRIQUE", "HURTADO JUAN CARLOS", "CARDENAS LONDONO DANIEL", "PEREZ CIRO JOHNY ALBERTO", "LOPEZ CASTRO ANIBAL", "SANCHEZ BETANCUR LEIDY YOHANNA", "RICO MARIN ANDRES MAURICIO", "HERRERA QUINTERO JHON EDISON", "LOPEZ VARGAS ANDRES", "CANDAMIL CANDAMIL WILSON", "SANCHEZ ROMERO LUIS GONZAGA", "SANCHEZ VELASQUEZ LEIDY YULIANA", "PASCUMAL MORENO JIMMY DUVAN", "PEREZ CARDONA ARIEL ANTONIO", "RODRIGUEZ SANCHEZ DAVID ANDRES", "PEREZ QUINTERO SIGIFREDO", "PEREZ QUINTERO YANETH ALEJANDRA", "TREJOS MEZA DANIEL ALFONSO", "OSORIO OSPINO JUAN DIEGO", "MONTES CARDONA CARLOS ALBERTO", "VALLEJO ALZATE ALEXANDER", "SERNA PELAEZ CRISTIAN CAMILO", "ECHEVERRY CALDERON DIEGO ALEJANDRO", "CAÑAVERAL SANCHEZ CRISTIAN LEVIDIER", "OSSA HERNANDEZ PABLO NELSON", "URIBE LOPEZ FERMIN DE JESUS", "VARGAS JARAMILLO JULIANA", "SALAZAR SALAZAR JUAN DAVID", "BUILES LOAIZA JUAN CAMILO", "ARCILA RAMIREZ NORBEY", "AGRICOLA LEANDRA", "ARDILA DUARTE ANDRES IGNACIO", "GRISALES ESCOBAR SADAT DAVID", "HOLGUIN CARDENAS JUAN PABLO", "RAMIREZ BERRIOS ANDRES FELIPE", "CORRALES CARDONA IVAN DARIO", "CORRALES CARDONA IVAN DARIO", "CHARA MARIN EIBER MANUEL", "GOMEZ GRISALES PATRICIA", "LEDESMA TABARES ANA MARIA", "RESTREPO ROJAS YEISON ANDRES", "VALENCIA ORTIZ FRANCY JULIETH", "RAMIREZ LONDONO MARIO FERNANDO", "SANCHEZ QUINTERO YISED STEFHANY", "SANCHEZ CASTRILLON DIEGO FABIAN", "VALDERRAMA AYALA ROBERTO", "TRUJILLO GONZALEZ MELQUICIDEC", "TRUJILLO MANJARRES FABIO NELSON", "TRUJILLO MANJARREZ WILSON", "JARAMILLO TAMAYO JOSE GUSTAVO", "GUTIERREZ GUTIERREZ YESID", "GUZMAN POSSO SEGUNDO JOSE", "URREGO GIRALDO CRISTOBAL DE JESUS", "HURTADO MORALES EDILBERTO", "GARCIA CATANO OMAR AUGUSTO", "LONDOÑO SANTACOLOMA RUBEN DARIO", "CHAVES ARISTIZABAL EDGAR ALEXANDER", "POTES PAREDES MIGUEL", "SARMIENTO OCAMPO LEONEL", "SANCLEMENTE VILLEGAS JESUS ENRIQUE", "SANCLEMENTE VILLEGAS JUAN CARLOS", "VARGAS GARCIA JHON EDWIN", "VALDERRAMA CAMPO EDGAR HERNAN", "VASQUEZ GOMEZ FERNEY", "RAMIREZ GARCIA GERMAN ALBERTO", "MARMOLEJO GARCIA NESTOR RAUL", "VALDERRAMA ROJAS JUAN CARLOS", "CORREA VALENCIA WILMER DE JESUS", "ZAPATA OSORIO EDILSON DE JESUS", "CARDONA MARIN ESAU", "HOYOS GOMEZ JUAN CARLOS", "RAMIREZ BATERO DIEGO FERNANDO", "LOPEZ OSSA RUBEN DARIO", "HINCAPIE DE VALENCIA LUZ MARIA", "NIETO CARDONA ALBA ROCIO", "LOPEZ MURILLO LUZ IDALBA", "VELASQUEZ GIRALDO LUZ ADRIANA", "VALENCIA RENDON MARTHA LUZ", "FAJARDO PULIDO MARIA ESPERANZA", "GIL GONZALEZ LUZ PIEDAD", "CORAL GOMEZ HELMUN ISMAEL", "VACAREZ MONTOYA MARIA PATRICIA", "VILLEGAS DE SANCLEMENTE LUCILA", "GUTIERREZ CARMONA ELSA LILIANA", "BECERRA PUERTA CLAUDIA PATRICIA", "RODRIGUEZ HERRERA ARGENIS", "ESCALANTE ORTIZ JHULIANA", "MORENO ZULUAGA LINA MARIA", "LONDONO KURATOMI MARGARITA MARIA", "DUQUE MARULANDA ANA MILENA", "SALAZAR ISAZA MARTHA LUCIA", "SALINAS ZAPATA ANA MARIA", "PUERTA LOPEZ MARIA DEL PILAR", "LEON HENAO VICTOR ALFONSO", "BUSTAMANTE ORTIZ JHON FREDY", "GOMEZ URIBE ESTEBAN", "HINCAPIE VELEZ LUIS CARLOS", "RIVERA MURILLO JESUS MARIA", "BEJARANO RIOS DANIEL", "BETANCUR BETANCUR MIGUEL ANGEL", "AMORTEGUI AMORTEGUI REINALDO", "LOPEZ VASQUEZ JUAN GUILLERMO", "GIRALDO GIRALDO AQUILINO", "CHACON MARROQUIN JAIRO", "HURTADO BERMUDEZ JORGE ENRIQUE", "GIRALDO RENDON MARIA TERESA", "CARVAJAL SANTOS GLORIA NANCY", "HECTOR HERNANDO VALENCIA LOPEZ", "LOPEZ BUITRAGO LUIS FERNANDO", "LOPEZ GALVIS HECTOR JAIME", "MAZO RESTREPO RUBEN DARIO", "ECHAVARRIA HERNANDEZ MAURICIO", "RIOS GARCIA JORGE EDUARDO", "CHAVERRA GONZALEZ ANDRES MAURICIO", "ESCOBAR URIBE SANTIAGO", "PARRA VARGAS RUBEN DARIO", "RESTREPO AGUDELO GERMAN DE JESUS", "VILLADA VARON LUIS GABRIEL", "CONTRERAS FERNANDEZ FERNANDO", "CORREAL RUBIANO DANIEL ALBERTO", "OSPINA NARANJO ULISES", "FANDINO BELTRAN LUIS ORLANDO", "CASTAÑO AGUILAR JOSE CAMILO", "MARTINEZ ALEJANDRO", "CORPOSANTANA", "AGROPECUARIA REMOLINOS SAS", "JARAMILLO GIRALDO Y CIA S.A.S.", "SOCIEDAD ALMACÉN EL HACENDADO S.A.S.", "CENTRAL DEL CAMPO S.A.S", "ALONSO ORTIZ NELSON ENRIQUE", "GOMEZ URIBE JOAQUIN", "CONCENTRADOS DEL CENTRO SAS", "SUCESORES DE LIBORIO GUTIERREZ Y CIA SAS", "JARAMILLO Y CIA SA", "GIRALDO JARAMILLO Y CIA S EN C A", "SAN GREGORIO S.A.S", "COROZAL SA", "INVERSIONES LA MARIA Y CIA SAS", "ALMACEN Y DISTRIBUCIONES AGRICOLAS EL RUIZ S A", "SUAGRO INSUMOS AGRICOLAS S A", "CASA DEL AGRICULTOR SAS", "COMERCIALIZADORA INTERNACIONAL GRUPO EXPORTADOR", "FRUTICOLA CALAMAR LTDA", "FEDERACION NACIONAL DE CAFETEROS DE COLOMBIA", "AGROPECUARIA MARAVELEZ SAS", "COOPCAFER", "COOPERATIVA DE GANADEROS Y AGRICULTORES DEL RISA", "S OSORIO V Y CIA SCA", "DISTRIBUIDOR AGROPECUARIO DEL QUINDIO S A S", "AGROPECUARIA LA HUELLA LIMITADA", "GUTIERREZ LOPEZ Y CIA S EN CA", "GUTI GOMEZ Y CIA S EN CA", "GUTIERREZ LOPEZ GOMEZ Y CIA S EN C A", "FRUTY GREEN SAS", "PORCICOLA PRADERA S.A", "GOMEZ RIVERA AGROPECUARIA Y CIA SCA", "OTUNAGRO SAS", "ASOCIADOS DE MOREROS DE ALTA CAMPANA", "GLOBAL GREEN SEEDS SAS", "GOLDEN HASS SAS", "ABOCAR RISARALDA SAS", "COMERCIALIZADORA MAXI FINCA SAS", "AGRICOLA AUTOMOTRIZ DEL NORTE S A S", "COLHASS SAS", "ENTRE ARROYOS SAS", "AGRICOLA ARA SAS", "AGROGANADERA BARRANCA SAS", "HASS MEJIA S.A.S.", "AGRICOLA EL SAMAN SAS", "INVERSIONES BOTERO Y SALAZAR SAS", "ANDINO AGRICOLA DEL EJE CAFETERO S.A.S.", "AGROTERRA DE OCCIDENTE S.A.S", "AGRO INSUMO VAMOS PAL CAMPO SAS", "AVOCADOS FROM COLOMBIA SAS", "ARCANGEL MIGUEL INTERNATIONAL SAS", "SAJUCA SAS", "EMERALD HEART AVOCADOS S.A.S", "EN FRESCO SAS", "AGRICOLA ALTOS DEL VALLE SAS", "GREEN KINGS SAS", "AGRICOLA PERSEA SAS", "EMALUSA SAS", "SOCIEDAD BENAYA SAS", "EL ROBLE HASS SAS", "GRUPO CAMPOMIO SAS", "CAMPOSOL COLOMBIA SAS", "WORLD LINK HASS COLOMBIA SAS", "COLOMICH SAS", "JARAMILLO GARCIA SUCESORES SAS", "HASS GENESIS SAS", "HERO HASS S.A.S.", "INVERSIONES ASL SAS", "COLOMBIA SV INMOBILIARIOS SAS", "MONTE CRISTO COLOMBIA SAS", "BEMAT COLOMBIA SAS", "ROYAL HASS SAS", "BONAE SAS", "GREEN SUPERFOOD SAS", "INVERSIONES A.G.P.58. S.A.S", "AVOCADO & FRUITS SAS", "AGRO AMIGO DEL EJE SAS", "AGRICOLA PACIFICO SUR SAS", "COMERCIALIZADORA DE FRUTOS DEL CAMPO JP SAS", "PRODUCTORA PROFUTURO SAS", "NAF COLOMBIA SAS", "AGRO & FUTURO SAS", "AVOGARDEN SAS", "AGROCULTIVOS ORO SAS", "DISTRIBUIDORA AGROBIOLOGICOS DEL QUINDIO SAS", "LA ROMANA COLOMBIA SAS", "B&B PRODUCE S.A.S. ZOMAC", "ARBA COLOMBIA SAS", "AGROPECUARIA VALDIVIA SAS", "LA ESTACION AGROPECUARIA SAS", "AGROINDIA SAS", "COMERCIALIZADORA LA DESPENSA SPA", "AGRICOLA NUEVA HUATULAME SAS", "AGROPIPINTA SAS", "ALMACEN LA FINQUITA S.A.S.", "AGRICOLA QUILIMARI S.A.S", "LA HACIENDA COLOMBIANA SAS", "HASSIENDA SAS", "INVERSIONES BELLA PALTA S.A.S.", "LIMONAGRO SAS", "PARTNERS FUND COLOMBIA SAS", "ROYAL AVOCADOS SAS - ZOMAC", "FLP FARMS SAS", "AGROCABAL SANTA ROSA SAS", "OASIS AVOCADOS S.A.S.", "CAÑAS DEL NORTE SAS", "EL VAQUERO ALMACEN AGROVETERINARIO SAS", "BAIKA COLOMBIA CI SAS", "VISUAGRO SAS", "AGROCITRUS SAS", "GOLDEN WEST SAS", "AGRICOLA GENOVA SAS", "TORONTO GREEN SAS", "AGRÍCOLA ATITLÁN S.A.S", "PERSEA COLOMBIA SAS", "ESENCIAL HASS SAS", "VIVIERO OCOA S.A.S ZOMAC", "CITRICOS LA PIRAGUA S.A.S.", "HASS NARANJO SAS", "AGROINSUMOS DEL CAMPO COLOMBIA SAS", "LEGACY AVOCADOS S.A.S. ZOMAC", "LEMU SAS", "AGRICOLA QUEBEC S.A.S.", "PARTNERS FUND COLOMBIA OPCO SAS", "PRECOOPERATIVA PORTALES DEL HUILA LTDA", "AGRO DISTRIBUIDORA EL CAMPO SAS", "AGRO TECHNOLOGY GROUP SAS", "AGRICOLA  ALEJANDRIA SAS", "BAMBUSA LIMES SAS", "C&C FANTASTIC FRUITS S.A.S.", "GREENLIME SAS", "AGROSANTELMO SAS", "AGRICOLA GENESIS SAS", "DOÑA LECHUGA SAS", "PELAEZ COMPANY S.A.S.", "AGROVETERINARIA DYR SAS", "SUCESORES AGRICOLA SAS", "QUINDIFRUITS SAS", "ARIACOL SAS", "AGROPECUARIA CAMPO SANTO SAS", "GIRALDO TAMAYO JESUS GERLEY", "MARIN HERNANDEZ JUAN PABLO ANTONIO", "MORA VICTORIA ERNESTO", "CASTRO SASTOQUE EDIER ALEXANDER", "CARDONA QUINTERO ANDRES FELIPE", "SANCHEZ HERNANDEZ CARLOS EFRAIN", "SOTO LONDOÑO ALEXANDER", "RODRIGUEZ LIEVANO CARLOS EDUARDO", "MONTOYA URIBE JORGE IVAN", "DUQUE SALAZAR CESAR AUGUSTO", "CASTANO VELEZ JAVIER GUSTAVO", "VELASQUEZ FLOREZ PEDRO ANTONIO", "PEREZ MUÑOZ GONZALO DE JESUS", "MAYO VILLEGAS JORGE MAURICIO", "BEJARANO RIOS SEBASTIAN", "JARAMILLO CADAVID RAMIRO", "JIMENEZ LOAIZA NESTOR MAURICIO", "BENJUMEA PINEDA OLMES EDILSON", "CORREA ARROYAVE WILSON ALBERTO"]};
+const COMERCIALES = Object.keys(CLIENTES_POR_COMERCIAL);
+
+const LABORES_FIJAS = ["Siembra","Macollamiento","Renovación","Riego","Bioestimulación arranque","Bioestimulación foliar","Control de plagas y enfermedades","Fertilización","Control de malezas","Maduración","Corte/Cosecha","Otro"];
+const ESTADOS_STE = ["Plantilla","Soca","Resiembra"];
+const URGENCIAS = [
+  {v:"rojo", label:"Esta semana"},
+  {v:"naranja", label:"Próxima semana"},
+  {v:"amarillo", label:"Dentro de 2 semanas"},
+  {v:"verde", label:"Dentro de 3 semanas o más"}
+];
+const URG_ORDER = {rojo:0, naranja:1, amarillo:2, verde:3};
+const TIEMPOS_SIGUIENTE = [
+  {v:"1mes", label:"1 mes", tono:"azul1"},
+  {v:"2meses", label:"2 meses", tono:"azul2"},
+  {v:"3meses", label:"3 meses", tono:"azul3"},
+  {v:"4mesesomas", label:"4 meses o más", tono:"azul4"}
+];
+const DEFAULT_TECNICOS = ["Diego Serna","Adriana Ramírez","Jennifer Díaz","Oswaldo Tamayo","Jorge Posso","Claudia Ortiz","Andrés Jiménez","Jorge Valencia","Horacio Barona (CAMPOFERT)","Carolina Barrera (CAMPOFERT)","Eliana Espinosa (CAMPOFERT)","Luis Carlos Meneses (CAMPOFERT)","Isabella Betancourt (TIMAC)","David Cardona (ECOLINE)","Ferney Gil (COSMOAGRO)","Maria Fernanda Montenegro (ADAMA)","Karen Alzate (FOLCOL)","Maria Vera (SYNGENTA)","Maria Fernanda Vergara (SYNGENTA)","Miguel Morales (SOLUCIONES N)","Hernan Torres (YARA)","Sebastian Balanta (SAFER)","Juan Camilo Erazo (SUMITOMO)","Mauro Restrepo","Diana Saa","Javier Zambrano","Milena Franco","Julio Bernal","Angie Franco"];
+const TECNICOS_VERSION = "v3";
+const DEFAULT_CARTERA_COMERCIALES = ["Mauro Restrepo"];
+
+let state = {
+  tecnicos: [],
+  principal: {}, // {tecnico: comercialPrincipal} — solo informativo, no restringe
+  carteraComerciales: [], // comerciales que requieren campo cartera
+  visitasIndex: [],
+  visitasCache: {},
+  tecnicoPasswords: {}, // {tecnico: password}
+  comercialPasswords: {}, // {comercial: password}
+  jefePassword: '',
+  adminPassword: '',
+  securityVersion: '',
+};
+
+let ui = {
+  activeTab: 'tecnico',
+  tecnicoSel: '', comercialApoyadoSel: '', clienteSel: '',
+  suertes: [{}],
+  siguienteLaborList: [{}],
+  lastMatch: null,
+  comercialViewSel: '',
+  jefeFiltros: {comercial:'', tecnico:'', urgencia:'', tiempo:''},
+};
+
+/* ============ CONEXIÓN AL BACKEND (Google Apps Script) ============ */
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyW-JFVrGyllwxxUDg1Kz8cHGksVAzsMkC4jYTlKrw6DpI9ttq4qMsKmK3G4uT-n9JJ/exec";
+const COLA_KEY = 'agse_cola_pendiente';
+
+async function apiGetAllConfig(){
+  try{
+    const res = await fetch(`${APPS_SCRIPT_URL}?tipo=config`, { cache: 'no-store' });
+    const data = await res.json();
+    return (data && data.ok) ? (data.config || {}) : {};
+  }catch(e){ return {}; }
+}
+async function apiSetConfig(key, value){
+  try{
+    const res = await fetch(APPS_SCRIPT_URL, { method:'POST', body: JSON.stringify({tipo:'config', key, value}) });
+    const data = await res.json();
+    return !!(data && data.ok);
+  }catch(e){ return false; }
+}
+async function apiSaveVisita(visita){
+  try{
+    const res = await fetch(APPS_SCRIPT_URL, { method:'POST', body: JSON.stringify(visita) });
+    const data = await res.json();
+    return data || {ok:false};
+  }catch(e){ return {ok:false}; }
+}
+async function apiGetVisitas(){
+  try{
+    const res = await fetch(APPS_SCRIPT_URL, { cache: 'no-store' });
+    const data = await res.json();
+    return (data && data.ok) ? data.visitas : [];
+  }catch(e){ return []; }
+}
+
+/* ---- Cola local: visitas que no se pudieron enviar por falta de señal ---- */
+function leerCola(){
+  try{ return JSON.parse(localStorage.getItem(COLA_KEY) || '[]'); }catch(e){ return []; }
+}
+function guardarCola(cola){
+  try{ localStorage.setItem(COLA_KEY, JSON.stringify(cola)); }catch(e){ /* si falla, seguimos igual */ }
+}
+function agregarACola(visita){
+  const cola = leerCola();
+  cola.push(visita);
+  guardarCola(cola);
+}
+async function intentarVaciarCola(){
+  let cola = leerCola();
+  if(cola.length === 0) return;
+  const pendientes = [];
+  for(const visita of cola){
+    const result = await apiSaveVisita(visita);
+    if(result && result.ok){
+      visita.id = result.id_visita;
+      state.visitasCache[visita.id] = visita;
+      state.visitasIndex.push(visita.id);
+    }else{
+      pendientes.push(visita);
+    }
+  }
+  guardarCola(pendientes);
+  return { enviadas: cola.length - pendientes.length, pendientes: pendientes.length };
+}
+
+async function loadConfig(){
+  const config = await apiGetAllConfig();
+  const t = config['tecnicos'];
+  const ver = config['tecnicos_version'];
+  if(!t || ver !== TECNICOS_VERSION){
+    state.tecnicos = [...DEFAULT_TECNICOS];
+    await apiSetConfig('tecnicos', JSON.stringify(state.tecnicos));
+    await apiSetConfig('tecnicos_version', TECNICOS_VERSION);
+  }else{
+    state.tecnicos = JSON.parse(t);
+  }
+  state.principal = config['principal'] ? JSON.parse(config['principal']) : {};
+  state.carteraComerciales = config['cartera_comerciales'] ? JSON.parse(config['cartera_comerciales']) : [];
+  if(state.carteraComerciales.length===0){
+    state.carteraComerciales = [...DEFAULT_CARTERA_COMERCIALES];
+    await apiSetConfig('cartera_comerciales', JSON.stringify(state.carteraComerciales));
+  }
+  state.tecnicoPasswords = config['tecnico_passwords'] ? JSON.parse(config['tecnico_passwords']) : {};
+  state.comercialPasswords = config['comercial_passwords'] ? JSON.parse(config['comercial_passwords']) : {};
+  state.jefePassword = config['jefe_password'] || '';
+  state.adminPassword = config['admin_password'] || '';
+  state.securityVersion = config['security_version'] || '';
+
+  // Si la versión de seguridad cambió desde la última vez que esta pestaña estuvo activa
+  // (por ejemplo, cambiaste una contraseña mientras alguien la tenía abierta), se borran
+  // todos los accesos ya concedidos en esta sesión y se les vuelve a pedir la clave.
+  const versionVista = sessionStorage.getItem('security_version_seen');
+  if(versionVista === null){
+    // Primera vez que se abre esta pestaña: no hay nada que limpiar, solo se toma nota.
+    sessionStorage.setItem('security_version_seen', state.securityVersion);
+  }else if(versionVista !== state.securityVersion){
+    Object.keys(sessionStorage).filter(k=>k.startsWith('auth_')).forEach(k=>sessionStorage.removeItem(k));
+    sessionStorage.setItem('security_version_seen', state.securityVersion);
+    if(['jefe','comercial','config'].includes(ui.activeTab)) ui.activeTab = 'tecnico';
+  }
+}
+async function saveConfig(){
+  await apiSetConfig('tecnicos', JSON.stringify(state.tecnicos));
+  await apiSetConfig('principal', JSON.stringify(state.principal));
+  await apiSetConfig('cartera_comerciales', JSON.stringify(state.carteraComerciales));
+}
+async function savePasswords(){
+  await apiSetConfig('tecnico_passwords', JSON.stringify(state.tecnicoPasswords));
+  await apiSetConfig('comercial_passwords', JSON.stringify(state.comercialPasswords));
+  await apiSetConfig('jefe_password', state.jefePassword);
+  await apiSetConfig('admin_password', state.adminPassword);
+  // Sube la "versión de seguridad" para que cualquier pestaña que alguien tenga abierta
+  // (aunque no la cierre) pierda sus accesos ya concedidos la próxima vez que vuelva a ella.
+  state.securityVersion = Date.now().toString();
+  await apiSetConfig('security_version', state.securityVersion);
+  sessionStorage.setItem('security_version_seen', state.securityVersion);
+}
+
+async function loadAllVisitas(){
+  const visitas = await apiGetVisitas();
+  state.visitasCache = {};
+  state.visitasIndex = [];
+  visitas.forEach(v=>{
+    state.visitasCache[v.id] = v;
+    state.visitasIndex.push(v.id);
+  });
+}
+async function saveVisita(visita){
+  const result = await apiSaveVisita(visita);
+  if(result && result.ok){
+    visita.id = result.id_visita;
+    state.visitasIndex.push(visita.id);
+    state.visitasCache[visita.id] = visita;
+    return {ok:true, id:visita.id};
+  }
+  // Sin señal o el servidor no respondió: queda guardada en el celular y se reintenta sola
+  agregarACola(visita);
+  return {ok:false, encolada:true};
+}
+
+/* ============ UTIL ============ */
+/** Pide contraseña para un espacio (técnico/comercial/jefe/admin). Consulta SIEMPRE la
+ *  configuración más reciente del servidor en el momento del intento — así una pestaña
+ *  que ya estaba abierta desde antes también respeta una contraseña puesta después,
+ *  sin depender de que la pestaña se recargue o pase a segundo plano.
+ *  Si no hay contraseña configurada para ese nombre, deja pasar sin preguntar.
+ *  La contraseña de Configuración (admin) funciona como llave maestra para cualquier espacio. */
+async function verificarClave(tipo, nombre){
+  if(!nombre) return true;
+  const configActual = await apiGetAllConfig();
+  const adminPass = configActual['admin_password'] || '';
+  let claveEsperada = '';
+  if(tipo === 'tec'){
+    const map = configActual['tecnico_passwords'] ? JSON.parse(configActual['tecnico_passwords']) : {};
+    claveEsperada = map[nombre] || '';
+  }else if(tipo === 'com'){
+    const map = configActual['comercial_passwords'] ? JSON.parse(configActual['comercial_passwords']) : {};
+    claveEsperada = map[nombre] || '';
+  }else if(tipo === 'jefe'){
+    claveEsperada = configActual['jefe_password'] || '';
+  }else if(tipo === 'admin'){
+    claveEsperada = adminPass;
+  }
+  // Se refresca el estado local con lo que acabamos de leer, para que el resto de la
+  // app (por ejemplo, la propia pantalla de Configuración) muestre siempre lo último.
+  state.adminPassword = adminPass;
+  if(!claveEsperada) return true;
+  const key = 'auth_'+tipo+'_'+nombre;
+  if(sessionStorage.getItem(key) === '1') return true;
+  const intento = prompt('Contraseña de ' + nombre + ':');
+  if(intento === claveEsperada || (tipo !== 'admin' && adminPass && intento === adminPass)){
+    sessionStorage.setItem(key, '1');
+    return true;
+  }
+  if(intento !== null) alert('Contraseña incorrecta.');
+  return false;
+}
+
+function urgBadge(v){
+  const u = URGENCIAS.find(x=>x.v===v);
+  return u ? `<span class="badge badge-${v}">${u.label}</span>` : '';
+}
+function tiempoBadge(v){
+  const t = TIEMPOS_SIGUIENTE.find(x=>x.v===v);
+  return t ? `<span class="badge badge-${t.tono}">${t.label}</span>` : '';
+}
+function fincaKeyMatches(a,b){
+  return (a||'').trim().toLowerCase() === (b||'').trim().toLowerCase();
+}
+function findLastMatch(cliente, finca){
+  let best = null;
+  Object.values(state.visitasCache).forEach(v=>{
+    if(v.cliente===cliente && fincaKeyMatches(v.finca, finca)){
+      if(!best || v.fecha > best.fecha) best = v;
+    }
+  });
+  return best;
+}
+
+
+/* ============ RENDER ROOT ============ */
+async function render(){
+  document.querySelectorAll('nav.tabs button').forEach(b=>{
+    b.classList.toggle('active', b.dataset.tab===ui.activeTab);
+  });
+  const main = document.getElementById('main');
+  if(ui.activeTab==='tecnico') renderTecnico(main);
+  else if(ui.activeTab==='comercial') renderComercial(main);
+  else if(ui.activeTab==='jefe') await renderJefe(main);
+  else await renderConfig(main);
+}
+
+document.getElementById('tabs').addEventListener('click', e=>{
+  const btn = e.target.closest('button');
+  if(!btn) return;
+  ui.activeTab = btn.dataset.tab;
+  render();
+});
+
+/* ============ TAB: TÉCNICO ============ */
+function renderTecnico(main){
+  const tecOptions = state.tecnicos.map(t=>`<option value="${t}" ${ui.tecnicoSel===t?'selected':''}>${t}</option>`).join('');
+  const comOptions = COMERCIALES.map(c=>`<option value="${c}" ${ui.comercialApoyadoSel===c?'selected':''}>${c}</option>`).join('');
+  const clientes = ui.comercialApoyadoSel ? [...CLIENTES_POR_COMERCIAL[ui.comercialApoyadoSel]].sort((a,b)=>a.localeCompare(b,'es')) : [];
+  const showForm = ui.tecnicoSel && ui.comercialApoyadoSel && ui.clienteSel;
+  const requiereCartera = state.carteraComerciales.includes(ui.comercialApoyadoSel);
+
+  const pendientesCount = leerCola().length;
+  let html = `
+  <div class="note">Esta app guarda cada visita en tu base de Google Sheets. Si no hay señal en el momento, la visita queda guardada en este celular y se envía sola apenas vuelva la conexión — no necesitas repetirla ni estar pendiente.${pendientesCount>0 ? ` <strong>Ahora mismo tienes ${pendientesCount} visita(s) esperando por enviarse.</strong>` : ''}</div>
+  <div class="card">
+    <label class="first">Técnico</label>
+    <select id="selTecnico">
+      <option value="">Selecciona tu nombre</option>
+      ${tecOptions}
+    </select>
+    ${state.tecnicos.length===0 ? '<p class="small-muted">Aún no hay técnicos configurados. Ve a la pestaña Configuración para agregarlos.</p>':''}
+
+    ${ui.tecnicoSel ? `
+    <label>Comercial al que apoya en esta visita</label>
+    <select id="selComercial">
+      <option value="">Selecciona comercial</option>
+      ${comOptions}
+    </select>
+    <p class="small-muted">Puedes elegir cualquier comercial, no solo el principal.</p>
+    ` : ''}
+
+    ${ui.comercialApoyadoSel ? `
+    <label>Cliente</label>
+    <div class="autocomplete-wrap">
+      <input type="text" id="selCliente" placeholder="Escribe el nombre del cliente para filtrar" value="${ui.clienteSel || ''}" autocomplete="off">
+      <div id="clienteSugerencias" class="autocomplete-list" style="display:none;"></div>
+    </div>
+    <p class="small-muted" id="clienteNoEncontrado" style="display:none; color:var(--rust);">No encontré ese cliente en la base de este comercial. Verifica el nombre.</p>
+    ` : ''}
+  </div>
+  `;
+
+  if(showForm){
+    html += renderVisitaForm();
+  }
+
+  main.innerHTML = html;
+
+  const st = document.getElementById('selTecnico');
+  if(st) st.onchange = async e=>{
+    const nuevoTecnico = e.target.value;
+    if(!(await verificarClave('tec', nuevoTecnico))){
+      st.value = ui.tecnicoSel || '';
+      return;
+    }
+    ui.tecnicoSel = nuevoTecnico;
+    ui.comercialApoyadoSel = state.principal[ui.tecnicoSel] || '';
+    ui.clienteSel='';
+    render();
+  };
+  const sc = document.getElementById('selComercial');
+  if(sc) sc.onchange = e=>{ ui.comercialApoyadoSel=e.target.value; ui.clienteSel=''; render(); };
+  const scl = document.getElementById('selCliente');
+  if(scl){
+    const clientesValidos = ui.comercialApoyadoSel ? CLIENTES_POR_COMERCIAL[ui.comercialApoyadoSel] : [];
+    const sugerenciasBox = document.getElementById('clienteSugerencias');
+
+    function seleccionarCliente(val){
+      ui.clienteSel = val;
+      ui.llantas = null;
+      ui.sigTiempoSel = '';
+      document.getElementById('clienteNoEncontrado').style.display = 'none';
+      render();
+    }
+
+    function mostrarSugerenciasCliente(){
+      const val = scl.value.trim().toLowerCase();
+      document.getElementById('clienteNoEncontrado').style.display = 'none';
+      if(!val){ sugerenciasBox.style.display = 'none'; sugerenciasBox.innerHTML=''; return; }
+      const matches = clientesValidos.filter(c=>c.toLowerCase().includes(val)).slice(0,40);
+      if(matches.length===0){ sugerenciasBox.style.display = 'none'; sugerenciasBox.innerHTML=''; return; }
+      sugerenciasBox.innerHTML = matches.map(c=>`<div>${c}</div>`).join('');
+      sugerenciasBox.style.display = 'block';
+      Array.from(sugerenciasBox.children).forEach((opt,i)=>{
+        opt.onclick = ()=>{
+          scl.value = matches[i];
+          sugerenciasBox.style.display = 'none';
+          seleccionarCliente(matches[i]);
+        };
+      });
+    }
+
+    scl.addEventListener('input', mostrarSugerenciasCliente);
+    scl.addEventListener('focus', mostrarSugerenciasCliente);
+    scl.addEventListener('blur', ()=>{
+      setTimeout(()=>{
+        sugerenciasBox.style.display = 'none';
+        const val = scl.value.trim();
+        if(val === ui.clienteSel) return;
+        if(clientesValidos.includes(val)){
+          seleccionarCliente(val);
+        }else if(val === ''){
+          ui.clienteSel = '';
+          render();
+        }else{
+          document.getElementById('clienteNoEncontrado').style.display = 'block';
+        }
+      }, 200);
+    });
+  }
+
+  if(showForm) wireVisitaForm();
+}
+
+function renderVisitaForm(){
+  const prevAny = Object.values(state.visitasCache)
+    .filter(v=>v.cliente===ui.clienteSel)
+    .sort((a,b)=> (b.fecha||'').localeCompare(a.fecha||''))[0];
+
+  const today = new Date().toISOString().slice(0,10);
+  const requiereCartera = state.carteraComerciales.includes(ui.comercialApoyadoSel);
+
+  return `
+  <div class="card">
+    <h3 style="margin-top:0">Datos de la visita</h3>
+    <label class="first">Fecha de visita</label>
+    <input type="date" id="inpFecha" value="${today}">
+
+    <label>Cultivo</label>
+    <select id="selCultivo">
+      <option value="Caña" ${prevAny&&prevAny.cultivo==='Caña'?'selected':''}>Caña</option>
+      <option value="Otro" ${prevAny&&prevAny.cultivo==='Otro'?'selected':''}>Otro</option>
+    </select>
+    <div id="cultivoOtroWrap" style="display:${prevAny&&prevAny.cultivo==='Otro'?'block':'none'}">
+      <input type="text" id="inpCultivoOtro" placeholder="¿Cuál cultivo?" value="${prevAny?prevAny.cultivoOtro||'':''}">
+    </div>
+
+    <label>Finca visitada <span style="color:var(--rust);">*</span></label>
+    <div class="autocomplete-wrap">
+      <input type="text" id="inpFinca" placeholder="Escribe o selecciona una finca ya registrada" value="${prevAny?prevAny.finca||'':''}" autocomplete="off">
+      <div id="fincaSugerencias" class="autocomplete-list" style="display:none;"></div>
+    </div>
+    <p class="small-muted" id="fincaRequiredMsg" style="display:none; color:var(--rust);">Este campo es obligatorio.</p>
+    <p class="prefill-note" id="fincaVisitadaMsg" style="display:none;"></p>
+
+    <label>Área total neta</label>
+    <div class="area-row">
+      <input type="number" id="inpAreaValor" placeholder="0" value="${prevAny?prevAny.areaValor||'':''}">
+      <select id="selAreaUnidad">
+        ${["ha","plazas","árboles","plantas"].map(u=>`<option ${prevAny&&prevAny.areaUnidad===u?'selected':''}>${u}</option>`).join('')}
+      </select>
+    </div>
+
+    <label>Ubicación</label>
+    <div class="ubicacion-row">
+      <input type="text" id="inpUbicacion" placeholder="Link de Google Maps o coordenadas" value="${prevAny?prevAny.ubicacion||'':''}">
+      <button type="button" class="btn-edit" id="btnCapturarUbicacion">📍 Guardar</button>
+    </div>
+    <p class="small-muted" id="ubicacionGuardadaMsg" style="display:${prevAny&&prevAny.ubicacion?'block':'none'}; color:var(--moss); font-weight:600;">✓ Ya tienes una ubicación guardada para esta finca.</p>
+
+    <label>Localidad (zona, municipio, corregimiento)</label>
+    <input type="text" id="inpLocalidad" placeholder="Ej: Corregimiento El Tiple, Palmira" value="${prevAny?prevAny.localidad||'':''}">
+    <p class="prefill-note" id="prefillNote" style="display:${prevAny?'block':'none'}">Datos precargados de tu visita más reciente a este cliente. Si eliges la finca exacta arriba, se ajustan solos a esa finca.</p>
+
+    <label>Persona contactada</label>
+    <input type="text" id="inpPersona" placeholder="Nombre de quien atendió la visita">
+    <label style="display:flex;align-items:center;gap:6px;font-weight:400;margin-top:6px;">
+      <input type="checkbox" id="chkActualizarContacto" style="width:auto;"> Actualizar este contacto en la base
+    </label>
+
+    ${requiereCartera ? `
+    <hr class="divider">
+    <label class="first">Estado de cartera</label>
+    <select id="selCartera">
+      <option value="">Selecciona</option>
+      <option>Al día</option>
+      <option>En mora</option>
+      <option>En gestión</option>
+      <option>No aplica</option>
+    </select>
+    <label>Observación de cartera</label>
+    <input type="text" id="inpCarteraObs" placeholder="Opcional">
+    ` : ''}
+  </div>
+
+  <div id="suertesWrap"></div>
+  <button type="button" class="btn secondary" id="btnAddSuerte">+ Agregar otra suerte</button>
+
+  <div class="card">
+    <h3 style="margin-top:0">Llantas</h3>
+    <label class="first">Observaciones (Tiene maquinaria o vehículos propios, próximo cambio o necesidad de visita)</label>
+    <textarea id="llantasObs" placeholder="Describe aquí...">${ui.llantas ? ui.llantas.obs || '' : ''}</textarea>
+    ${prevAny && prevAny.llantas && (prevAny.llantas.obs || prevAny.llantas.urgencia) ? `
+      <p class="prefill-note">Ya registraste información de llantas para este cliente el ${prevAny.fecha || '—'}: "${(prevAny.llantas.obs||'').slice(0,80)}${(prevAny.llantas.obs||'').length>80?'...':''}"</p>
+    ` : ''}
+    <label>Dentro de cuánto</label>
+    <div class="semaforo" id="llantasSemaforo">
+      ${URGENCIAS.map(u=>`
+        <label class="${ui.llantas && ui.llantas.urgencia===u.v ? 'sel-'+u.v : ''}">
+          <input type="radio" name="urg-llantas" class="llantas-urgencia" value="${u.v}" ${ui.llantas && ui.llantas.urgencia===u.v?'checked':''}>
+          <span class="dot dot-${u.v}"></span>
+          ${u.label}
+        </label>
+      `).join('')}
+    </div>
+  </div>
+
+  <div id="siguienteWrap"></div>
+  <button type="button" class="btn secondary" id="btnAddSiguiente">+ Agregar otra próxima labor</button>
+
+  <div class="card">
+    <label class="first">Observaciones adicionales de la visita</label>
+    <textarea id="obsGenerales" placeholder="Comentarios generales, contexto, alertas..."></textarea>
+  </div>
+
+  <div id="saveStatus"></div>
+  <button class="btn" id="btnGuardarVisita">Guardar visita</button>
+  `;
+}
+
+function renderSuertesBlocks(){
+  return ui.suertes.map((s,i)=>`
+    <div class="suerte-block" data-idx="${i}">
+      <span class="tag">Suerte ${i+1}</span>
+      <label class="first"># STE</label>
+      <input type="text" class="s-ste" value="${s.ste||''}" placeholder="Ej: 14A">
+      <label>Área</label>
+      <div class="area-row">
+        <input type="number" class="s-area" value="${s.area||''}" placeholder="0">
+        <select class="s-area-unidad">
+          ${["ha","plazas","árboles","plantas"].map(u=>`<option ${s.areaUnidad===u?'selected':''}>${u}</option>`).join('')}
+        </select>
+      </div>
+      <label>Fecha de corte de la suerte (mes y año)</label>
+      <input type="month" class="s-fechacorte" value="${s.fechaCorte||''}">
+      <label>Estado de la STE</label>
+      <select class="s-estado">
+        <option value="">Selecciona</option>
+        ${ESTADOS_STE.map(e=>`<option ${s.estado===e?'selected':''}>${e}</option>`).join('')}
+      </select>
+      <label>Labor</label>
+      <select class="s-labor">
+        <option value="">Selecciona</option>
+        ${LABORES_FIJAS.map(l=>`<option ${s.labor===l?'selected':''}>${l}</option>`).join('')}
+      </select>
+      <div class="s-labor-otro-wrap" style="display:${s.labor==='Otro'?'block':'none'}">
+        <input type="text" class="s-labor-otro" placeholder="¿Cuál labor?" value="${s.laborOtro||''}">
+      </div>
+      <label>Necesita labor dentro de</label>
+      <div class="semaforo">
+        ${URGENCIAS.map(u=>`
+          <label class="${s.urgencia===u.v?'sel-'+u.v:''}">
+            <input type="radio" name="urg-${i}" class="s-urgencia" value="${u.v}" ${s.urgencia===u.v?'checked':''}>
+            <span class="dot dot-${u.v}"></span>
+            ${u.label}
+          </label>
+        `).join('')}
+      </div>
+      <label>Recomendación</label>
+      <textarea class="s-recomendacion" placeholder="Producto, dosis, indicación...">${s.recomendacion||''}</textarea>
+      <label>Observaciones</label>
+      <textarea class="s-observaciones" placeholder="Comentario adicional sobre esta suerte">${s.observaciones||''}</textarea>
+      <label>Fotos</label>
+      <input type="file" class="s-fotos" accept="image/*" multiple>
+      <p class="small-muted fotos-status">${s.fotos && s.fotos.length ? s.fotos.length+' foto(s) lista(s) para guardar.' : ''}</p>
+      ${ui.suertes.length>1?`<button type="button" class="btn-edit btn-remove-suerte" style="margin-top:8px;">Eliminar esta suerte</button>`:''}
+    </div>
+  `).join('');
+}
+
+function renderSiguienteBlocks(){
+  return ui.siguienteLaborList.map((sg,i)=>`
+    <div class="suerte-block" data-idx="${i}">
+      <span class="tag">Próxima labor ${i+1}</span>
+      <label class="first"># STE</label>
+      <input type="text" class="sig-ste" value="${sg.ste||''}" placeholder="Ej: 14A">
+      <label>Área</label>
+      <div class="area-row">
+        <input type="number" class="sig-area" value="${sg.area||''}" placeholder="0">
+        <select class="sig-area-unidad">
+          ${["ha","plazas","árboles","plantas"].map(u=>`<option ${sg.areaUnidad===u?'selected':''}>${u}</option>`).join('')}
+        </select>
+      </div>
+      <label>Próxima labor</label>
+      <select class="sig-labor">
+        <option value="">Selecciona</option>
+        ${LABORES_FIJAS.map(l=>`<option ${sg.labor===l?'selected':''}>${l}</option>`).join('')}
+      </select>
+      <label>Tiempo estimado</label>
+      <div class="semaforo sig-tiempo-semaforo">
+        ${TIEMPOS_SIGUIENTE.map(t=>`
+          <label class="${sg.tiempo===t.v ? 'sel-'+t.tono : ''}">
+            <input type="radio" name="sig-tiempo-${i}" class="sig-tiempo-radio" value="${t.v}" ${sg.tiempo===t.v?'checked':''}>
+            <span class="dot dot-${t.tono}"></span>
+            ${t.label}
+          </label>
+        `).join('')}
+      </div>
+      ${ui.siguienteLaborList.length>1?`<button type="button" class="btn-edit btn-remove-siguiente" style="margin-top:8px;">Eliminar esta próxima labor</button>`:''}
+    </div>
+  `).join('');
+}
+
+function wireVisitaForm(){
+  const wrap = document.getElementById('suertesWrap');
+  wrap.innerHTML = renderSuertesBlocks();
+  wireSuertesEvents();
+
+  document.getElementById('btnAddSuerte').onclick = ()=>{
+    syncSuertesFromDOM();
+    ui.suertes.push({});
+    document.getElementById('suertesWrap').innerHTML = renderSuertesBlocks();
+    wireSuertesEvents();
+  };
+
+  const siguienteWrap = document.getElementById('siguienteWrap');
+  siguienteWrap.innerHTML = renderSiguienteBlocks();
+  wireSiguienteEvents();
+
+  document.getElementById('btnAddSiguiente').onclick = ()=>{
+    syncSiguienteFromDOM();
+    ui.siguienteLaborList.push({});
+    document.getElementById('siguienteWrap').innerHTML = renderSiguienteBlocks();
+    wireSiguienteEvents();
+  };
+
+  const selCultivo = document.getElementById('selCultivo');
+  selCultivo.onchange = ()=>{
+    document.getElementById('cultivoOtroWrap').style.display = selCultivo.value==='Otro' ? 'block':'none';
+  };
+
+  const inpFinca = document.getElementById('inpFinca');
+  const fincaSugerenciasBox = document.getElementById('fincaSugerencias');
+  const fincasConocidas = [...new Set(Object.values(state.visitasCache).filter(v=>v.cliente===ui.clienteSel).map(v=>v.finca).filter(Boolean))];
+
+  function aplicarFinca(){
+    inpFinca.style.borderColor = '';
+    document.getElementById('fincaRequiredMsg').style.display = 'none';
+    const match = findLastMatch(ui.clienteSel, inpFinca.value);
+    const fincaVisitadaMsg = document.getElementById('fincaVisitadaMsg');
+    if(match){
+      document.getElementById('inpUbicacion').value = match.ubicacion || '';
+      document.getElementById('inpLocalidad').value = match.localidad || '';
+      document.getElementById('inpAreaValor').value = match.areaValor || '';
+      document.getElementById('selAreaUnidad').value = match.areaUnidad || 'ha';
+      const selCultivo = document.getElementById('selCultivo');
+      selCultivo.value = match.cultivo || 'Caña';
+      document.getElementById('cultivoOtroWrap').style.display = match.cultivo==='Otro' ? 'block':'none';
+      if(document.getElementById('inpCultivoOtro')) document.getElementById('inpCultivoOtro').value = match.cultivoOtro || '';
+      document.getElementById('prefillNote').style.display = 'block';
+      document.getElementById('ubicacionGuardadaMsg').style.display = match.ubicacion ? 'block':'none';
+      fincaVisitadaMsg.textContent = `✓ Ya habías visitado esta finca antes (última vez: ${match.fecha || '—'}). Datos cargados de esa visita.`;
+      fincaVisitadaMsg.style.display = 'block';
+    }else{
+      fincaVisitadaMsg.style.display = 'none';
+    }
+  }
+
+  function mostrarSugerenciasFinca(){
+    const val = inpFinca.value.trim().toLowerCase();
+    if(!val){ fincaSugerenciasBox.style.display='none'; fincaSugerenciasBox.innerHTML=''; return; }
+    const matches = fincasConocidas.filter(f=>f.toLowerCase().includes(val)).slice(0,20);
+    if(matches.length===0){ fincaSugerenciasBox.style.display='none'; fincaSugerenciasBox.innerHTML=''; return; }
+    fincaSugerenciasBox.innerHTML = matches.map(f=>`<div>${f}</div>`).join('');
+    fincaSugerenciasBox.style.display='block';
+    Array.from(fincaSugerenciasBox.children).forEach((opt,i)=>{
+      opt.onclick = ()=>{
+        inpFinca.value = matches[i];
+        fincaSugerenciasBox.style.display = 'none';
+        aplicarFinca();
+      };
+    });
+  }
+
+  inpFinca.addEventListener('focus', mostrarSugerenciasFinca);
+  inpFinca.addEventListener('input', ()=>{
+    if(inpFinca.value.trim()){
+      inpFinca.style.borderColor = '';
+      document.getElementById('fincaRequiredMsg').style.display = 'none';
+    }
+    mostrarSugerenciasFinca();
+  });
+  inpFinca.addEventListener('blur', ()=>{
+    setTimeout(()=>{
+      fincaSugerenciasBox.style.display = 'none';
+      aplicarFinca();
+    }, 200);
+  });
+
+  const inpUbicacion = document.getElementById('inpUbicacion');
+  const ubicacionMsg = document.getElementById('ubicacionGuardadaMsg');
+  inpUbicacion.addEventListener('input', ()=>{
+    ubicacionMsg.style.display = inpUbicacion.value.trim() ? 'block' : 'none';
+  });
+  document.getElementById('btnCapturarUbicacion').onclick = ()=>{
+    const btn = document.getElementById('btnCapturarUbicacion');
+    if(!navigator.geolocation){
+      alert('Este dispositivo/navegador no permite capturar ubicación automáticamente. Escríbela manualmente en el campo.');
+      return;
+    }
+    btn.textContent = 'Ubicando...';
+    navigator.geolocation.getCurrentPosition(
+      pos=>{
+        const lat = pos.coords.latitude.toFixed(6);
+        const lng = pos.coords.longitude.toFixed(6);
+        inpUbicacion.value = `https://www.google.com/maps?q=${lat},${lng}`;
+        ubicacionMsg.style.display = 'block';
+        btn.textContent = '📍 Guardar';
+      },
+      err=>{
+        btn.textContent = '📍 Guardar';
+        alert('No se pudo obtener la ubicación automáticamente (sin señal GPS o permiso denegado). Puedes escribirla o pegarla manualmente.');
+      },
+      {enableHighAccuracy:true, timeout:10000}
+    );
+  };
+
+  document.querySelectorAll('.llantas-urgencia').forEach(radio=>{
+    radio.onchange = ()=>{
+      document.querySelectorAll('#llantasSemaforo label').forEach(l=>l.className='');
+      radio.closest('label').className = 'sel-'+radio.value;
+    };
+  });
+
+  document.querySelectorAll('.sig-tiempo-radio').forEach(radio=>{
+    radio.onchange = ()=>{
+      ui.sigTiempoSel = radio.value;
+      const tono = TIEMPOS_SIGUIENTE.find(t=>t.v===radio.value).tono;
+      document.querySelectorAll('#sigTiempoSemaforo label').forEach(l=>l.className='');
+      radio.closest('label').className = 'sel-'+tono;
+    };
+  });
+
+  document.getElementById('btnGuardarVisita').onclick = handleGuardarVisita;
+}
+
+function wireSuertesEvents(){
+  document.querySelectorAll('.s-labor').forEach(sel=>{
+    sel.onchange = ()=>{
+      const wrap = sel.closest('.suerte-block').querySelector('.s-labor-otro-wrap');
+      wrap.style.display = sel.value==='Otro' ? 'block':'none';
+    };
+  });
+  document.querySelectorAll('.s-urgencia').forEach(radio=>{
+    radio.onchange = ()=>{
+      const block = radio.closest('.suerte-block');
+      block.querySelectorAll('.semaforo label').forEach(l=>l.className='');
+      radio.closest('label').className = 'sel-'+radio.value;
+    };
+  });
+  document.querySelectorAll('.btn-remove-suerte').forEach(btn=>{
+    btn.onclick = ()=>{
+      syncSuertesFromDOM();
+      const idx = parseInt(btn.closest('.suerte-block').dataset.idx);
+      ui.suertes.splice(idx,1);
+      document.getElementById('suertesWrap').innerHTML = renderSuertesBlocks();
+      wireSuertesEvents();
+    };
+  });
+  document.querySelectorAll('.s-fotos').forEach(inp=>{
+    inp.onchange = async ()=>{
+      const block = inp.closest('.suerte-block');
+      const idx = parseInt(block.dataset.idx);
+      const statusEl = block.querySelector('.fotos-status');
+      const files = Array.from(inp.files || []);
+      if(files.length===0) return;
+      statusEl.textContent = 'Comprimiendo fotos...';
+      const nuevas = [];
+      for(const f of files){
+        try{
+          const data = await comprimirImagen(f);
+          nuevas.push({ name: f.name, data });
+        }catch(err){ /* si una foto falla, seguimos con las demás */ }
+      }
+      if(!ui.suertes[idx]) ui.suertes[idx] = {};
+      const existentes = ui.suertes[idx].fotos || [];
+      ui.suertes[idx].fotos = existentes.concat(nuevas);
+      inp.value = ''; // permite volver a elegir/tomar otra sin perder las ya cargadas
+      const total = ui.suertes[idx].fotos.length;
+      statusEl.innerHTML = total
+        ? `${total} foto(s) lista(s) para guardar. <span class="btn-edit fotos-quitar" data-idx="${idx}" style="padding:2px 8px; font-size:0.7rem;">Quitar todas</span>`
+        : 'No se pudo procesar la(s) foto(s).';
+      const quitarBtn = statusEl.querySelector('.fotos-quitar');
+      if(quitarBtn) quitarBtn.onclick = ()=>{
+        ui.suertes[idx].fotos = [];
+        statusEl.textContent = '';
+      };
+    };
+  });
+}
+
+function comprimirImagen(file, maxWidth=1000, calidad=0.6){
+  return new Promise((resolve, reject)=>{
+    const reader = new FileReader();
+    reader.onload = (e)=>{
+      const img = new Image();
+      img.onload = ()=>{
+        let w = img.width, h = img.height;
+        if(w > maxWidth){ h = Math.round(h * (maxWidth / w)); w = maxWidth; }
+        const canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        resolve(canvas.toDataURL('image/jpeg', calidad));
+      };
+      img.onerror = reject;
+      img.src = e.target.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+function syncSuertesFromDOM(){
+  document.querySelectorAll('#suertesWrap .suerte-block').forEach((block,i)=>{
+    const fotosPrevias = (ui.suertes[i] && ui.suertes[i].fotos) || [];
+    ui.suertes[i] = {
+      ste: block.querySelector('.s-ste').value,
+      area: block.querySelector('.s-area').value,
+      areaUnidad: block.querySelector('.s-area-unidad').value,
+      fechaCorte: block.querySelector('.s-fechacorte').value,
+      estado: block.querySelector('.s-estado').value,
+      labor: block.querySelector('.s-labor').value,
+      laborOtro: block.querySelector('.s-labor-otro') ? block.querySelector('.s-labor-otro').value : '',
+      urgencia: (block.querySelector('.s-urgencia:checked')||{}).value || '',
+      recomendacion: block.querySelector('.s-recomendacion').value,
+      observaciones: block.querySelector('.s-observaciones').value,
+      fotos: fotosPrevias,
+    };
+  });
+}
+
+function wireSiguienteEvents(){
+  document.querySelectorAll('.sig-tiempo-radio').forEach(radio=>{
+    radio.onchange = ()=>{
+      const tono = TIEMPOS_SIGUIENTE.find(t=>t.v===radio.value).tono;
+      const contenedor = radio.closest('.sig-tiempo-semaforo');
+      contenedor.querySelectorAll('label').forEach(l=>l.className='');
+      radio.closest('label').className = 'sel-'+tono;
+    };
+  });
+  document.querySelectorAll('.btn-remove-siguiente').forEach(btn=>{
+    btn.onclick = ()=>{
+      syncSiguienteFromDOM();
+      const idx = parseInt(btn.closest('.suerte-block').dataset.idx);
+      ui.siguienteLaborList.splice(idx,1);
+      document.getElementById('siguienteWrap').innerHTML = renderSiguienteBlocks();
+      wireSiguienteEvents();
+    };
+  });
+}
+
+function syncSiguienteFromDOM(){
+  document.querySelectorAll('#siguienteWrap .suerte-block').forEach((block,i)=>{
+    ui.siguienteLaborList[i] = {
+      ste: block.querySelector('.sig-ste').value,
+      area: block.querySelector('.sig-area').value,
+      areaUnidad: block.querySelector('.sig-area-unidad').value,
+      labor: block.querySelector('.sig-labor').value,
+      tiempo: (block.querySelector('.sig-tiempo-radio:checked')||{}).value || '',
+    };
+  });
+}
+
+async function handleGuardarVisita(){
+  const inpFinca = document.getElementById('inpFinca');
+  if(!inpFinca.value.trim()){
+    inpFinca.style.borderColor = 'var(--rust)';
+    document.getElementById('fincaRequiredMsg').style.display = 'block';
+    inpFinca.scrollIntoView({behavior:'smooth', block:'center'});
+    inpFinca.focus();
+    return;
+  }
+  syncSuertesFromDOM();
+  syncSiguienteFromDOM();
+  const requiereCartera = state.carteraComerciales.includes(ui.comercialApoyadoSel);
+  const visita = {
+    tecnico: ui.tecnicoSel,
+    comercial: ui.comercialApoyadoSel,
+    cliente: ui.clienteSel,
+    fecha: document.getElementById('inpFecha').value,
+    finca: document.getElementById('inpFinca').value,
+    ubicacion: document.getElementById('inpUbicacion').value,
+    localidad: document.getElementById('inpLocalidad').value,
+    cultivo: document.getElementById('selCultivo').value,
+    cultivoOtro: document.getElementById('inpCultivoOtro') ? document.getElementById('inpCultivoOtro').value : '',
+    areaValor: document.getElementById('inpAreaValor').value,
+    areaUnidad: document.getElementById('selAreaUnidad').value,
+    persona: document.getElementById('inpPersona').value,
+    actualizarContacto: document.getElementById('chkActualizarContacto').checked,
+    cartera: requiereCartera ? document.getElementById('selCartera').value : '',
+    carteraObs: requiereCartera ? document.getElementById('inpCarteraObs').value : '',
+    suertes: ui.suertes,
+    llantas: {
+      obs: document.getElementById('llantasObs').value,
+      urgencia: (document.querySelector('.llantas-urgencia:checked')||{}).value || '',
+    },
+    siguientes: ui.siguienteLaborList,
+    observacionesGenerales: document.getElementById('obsGenerales').value,
+  };
+
+  const statusEl = document.getElementById('saveStatus');
+  statusEl.innerHTML = `<div class="status-bar status-pending">Guardando...</div>`;
+
+  const result = await saveVisita(visita);
+  if(result.ok){
+    statusEl.innerHTML = `<div class="status-bar status-ok">✓ Visita guardada y sincronizada</div>`;
+    ui.tecnicoSel = ui.tecnicoSel; // keep técnico
+    ui.comercialApoyadoSel=''; ui.clienteSel=''; ui.suertes=[{}]; ui.llantas=null; ui.siguienteLaborList=[{}];
+    setTimeout(render, 900);
+  }else{
+    statusEl.innerHTML = `<div class="status-bar status-pending">📥 Sin conexión ahora mismo — esta visita quedó guardada en tu celular y se enviará sola en cuanto recuperes señal (no necesitas volver a llenarla). Puedes seguir usando la app normalmente.</div>`;
+    ui.tecnicoSel = ui.tecnicoSel;
+    ui.comercialApoyadoSel=''; ui.clienteSel=''; ui.suertes=[{}]; ui.llantas=null; ui.siguienteLaborList=[{}];
+    setTimeout(render, 2500);
+  }
+}
+
+/* ============ TAB: COMERCIAL ============ */
+function renderComercial(main){
+  const comOptions = COMERCIALES.map(c=>`<option value="${c}" ${ui.comercialViewSel===c?'selected':''}>${c}</option>`).join('');
+  let html = `
+  <div class="card">
+    <label class="first">Selecciona tu nombre (comercial)</label>
+    <select id="selComercialView">
+      <option value="">Selecciona</option>
+      ${comOptions}
+    </select>
+  </div>`;
+
+  if(ui.comercialViewSel){
+    const visitas = Object.values(state.visitasCache)
+      .filter(v=>v.comercial===ui.comercialViewSel)
+      .sort((a,b)=>{
+        const uMaxA = Math.min(...(a.suertes||[{urgencia:'verde'}]).map(s=>URG_ORDER[s.urgencia] ?? 3));
+        const uMaxB = Math.min(...(b.suertes||[{urgencia:'verde'}]).map(s=>URG_ORDER[s.urgencia] ?? 3));
+        if(uMaxA!==uMaxB) return uMaxA-uMaxB;
+        return (b.fecha||'').localeCompare(a.fecha||'');
+      });
+
+    html += `<h3>Visitas recibidas (${visitas.length})</h3>`;
+    if(visitas.length===0){
+      html += `<div class="empty">Aún no hay visitas registradas para tus clientes.</div>`;
+    }else{
+      html += visitas.map(v=>renderVisitCard(v)).join('');
+    }
+  }
+
+  main.innerHTML = html;
+  const sel = document.getElementById('selComercialView');
+  if(sel) sel.onchange = async e=>{
+    const nuevo = e.target.value;
+    if(!(await verificarClave('com', nuevo))){
+      sel.value = ui.comercialViewSel || '';
+      return;
+    }
+    ui.comercialViewSel = nuevo;
+    render();
+  };
+  wireVisitDetailToggles();
+}
+
+/* ============ TAB: JEFE COMERCIAL ============ */
+async function renderJefe(main){
+  if(!(await verificarClave('jefe', 'Jefe Comercial'))){
+    ui.activeTab = 'tecnico';
+    render();
+    return;
+  }
+  const allTecnicos = [...new Set(Object.values(state.visitasCache).map(v=>v.tecnico))];
+  let visitas = Object.values(state.visitasCache);
+
+  const f = ui.jefeFiltros;
+  if(f.comercial) visitas = visitas.filter(v=>v.comercial===f.comercial);
+  if(f.tecnico) visitas = visitas.filter(v=>v.tecnico===f.tecnico);
+  if(f.urgencia) visitas = visitas.filter(v=>(v.suertes||[]).some(s=>s.urgencia===f.urgencia));
+  if(f.tiempo) visitas = visitas.filter(v=>(v.siguientes||[]).some(s=>s.tiempo===f.tiempo));
+
+  visitas.sort((a,b)=>{
+    const uMaxA = Math.min(...(a.suertes||[{urgencia:'verde'}]).map(s=>URG_ORDER[s.urgencia] ?? 3));
+    const uMaxB = Math.min(...(b.suertes||[{urgencia:'verde'}]).map(s=>URG_ORDER[s.urgencia] ?? 3));
+    if(uMaxA!==uMaxB) return uMaxA-uMaxB;
+    return (b.fecha||'').localeCompare(a.fecha||'');
+  });
+
+  let html = `
+  <div class="filter-row">
+    <select id="filtroComercial">
+      <option value="">Todos los comerciales</option>
+      ${COMERCIALES.map(c=>`<option ${f.comercial===c?'selected':''}>${c}</option>`).join('')}
+    </select>
+    <select id="filtroTecnico">
+      <option value="">Todos los técnicos</option>
+      ${allTecnicos.map(t=>`<option ${f.tecnico===t?'selected':''}>${t}</option>`).join('')}
+    </select>
+    <select id="filtroUrgencia">
+      <option value="">Toda urgencia</option>
+      ${URGENCIAS.map(u=>`<option value="${u.v}" ${f.urgencia===u.v?'selected':''}>${u.label}</option>`).join('')}
+    </select>
+    <select id="filtroTiempo" style="border-color:var(--azul);">
+      <option value="">Todo tiempo estimado</option>
+      ${TIEMPOS_SIGUIENTE.map(t=>`<option value="${t.v}" ${f.tiempo===t.v?'selected':''}>${t.label}</option>`).join('')}
+    </select>
+  </div>
+  <h3>Total visitas: ${visitas.length}</h3>
+  `;
+
+  if(visitas.length===0){
+    html += `<div class="empty">No hay visitas que coincidan con estos filtros.</div>`;
+  }else{
+    html += visitas.map(v=>renderVisitCard(v, true)).join('');
+  }
+
+  main.innerHTML = html;
+  document.getElementById('filtroComercial').onchange = e=>{ ui.jefeFiltros.comercial=e.target.value; render(); };
+  document.getElementById('filtroTecnico').onchange = e=>{ ui.jefeFiltros.tecnico=e.target.value; render(); };
+  document.getElementById('filtroUrgencia').onchange = e=>{ ui.jefeFiltros.urgencia=e.target.value; render(); };
+  document.getElementById('filtroTiempo').onchange = e=>{ ui.jefeFiltros.tiempo=e.target.value; render(); };
+  wireVisitDetailToggles();
+}
+
+function renderVisitCard(v, showComercial){
+  const topUrg = (v.suertes||[]).map(s=>s.urgencia).sort((a,b)=>(URG_ORDER[a]??3)-(URG_ORDER[b]??3))[0] || 'verde';
+  return `
+  <div class="card urg-${topUrg} visit-summary">
+    <h3>${v.cliente}</h3>
+    <div class="meta">${v.finca || 'Finca no especificada'} · ${v.fecha} ${showComercial ? '· Comercial: '+v.comercial : ''} · Técnico: ${v.tecnico}</div>
+    ${urgBadge(topUrg)}
+    <span class="detail-toggle" data-id="${v.id}" style="margin-left:10px;">Ver detalle</span>
+    <div class="detail-body" id="detail-${v.id}" style="display:none; margin-top:10px;">
+      <hr class="divider">
+      <p><strong>Finca:</strong> ${v.finca||'—'} ${v.ubicacion?'· <strong>Ubicación:</strong> '+v.ubicacion:''}</p>
+      <p><strong>Localidad:</strong> ${v.localidad||'—'}</p>
+      <p><strong>Cultivo:</strong> ${v.cultivo==='Otro'?v.cultivoOtro:v.cultivo} · <strong>Área neta:</strong> ${v.areaValor||'—'} ${v.areaUnidad||''}</p>
+      <p><strong>Persona contactada:</strong> ${v.persona||'—'}</p>
+      ${v.cartera ? `<p><strong>Cartera:</strong> ${v.cartera} ${v.carteraObs?'— '+v.carteraObs:''}</p>` : ''}
+      ${(v.suertes||[]).map((s,i)=>`
+        <div class="suerte-block">
+          <span class="tag">Suerte ${i+1}</span>
+          <p><strong>STE:</strong> ${s.ste||'—'} · <strong>Área:</strong> ${s.area||'—'} ${s.areaUnidad||''} · <strong>Corte:</strong> ${s.fechaCorte||'—'}</p>
+          <p><strong>Estado:</strong> ${s.estado||'—'} · <strong>Labor:</strong> ${s.labor==='Otro'?s.laborOtro:s.labor||'—'}</p>
+          <p>${urgBadge(s.urgencia)}</p>
+          <p><strong>Recomendación:</strong> ${s.recomendacion||'—'}</p>
+          ${s.observaciones ? `<p><strong>Observaciones:</strong> ${s.observaciones}</p>`:''}
+          ${s.fotos && s.fotos.length ? `<p><strong>Fotos:</strong> ${s.fotos.map((u,fi)=>`<a href="${u}" target="_blank" rel="noopener">Ver foto ${fi+1}</a>`).join(' · ')}</p>`:''}
+        </div>
+      `).join('')}
+      ${v.llantas && (v.llantas.obs || v.llantas.urgencia) ? `
+        <div class="suerte-block">
+          <span class="tag">Llantas</span>
+          <p>${v.llantas.obs || '—'}</p>
+          <p>${urgBadge(v.llantas.urgencia)}</p>
+        </div>
+      ` : ''}
+      ${(v.siguientes||[]).filter(s=>s.labor||s.ste).map(s=>`
+        <p style="margin-top:10px;"><strong>Siguiente labor:</strong> ${s.labor||'—'} en STE ${s.ste||'—'} (${s.area||'—'} ${s.areaUnidad||''}) ${s.tiempo ? '— '+tiempoBadge(s.tiempo) : ''}</p>
+      `).join('')}
+      ${v.observacionesGenerales ? `<p><strong>Observaciones generales:</strong> ${v.observacionesGenerales}</p>` : ''}
+    </div>
+  </div>
+  `;
+}
+
+function wireVisitDetailToggles(){
+  document.querySelectorAll('.detail-toggle').forEach(t=>{
+    t.onclick = ()=>{
+      const body = document.getElementById('detail-'+t.dataset.id);
+      const isOpen = body.style.display==='block';
+      body.style.display = isOpen ? 'none':'block';
+      t.textContent = isOpen ? 'Ver detalle':'Ocultar detalle';
+    };
+  });
+}
+
+/* ============ TAB: CONFIGURACIÓN ============ */
+async function renderConfig(main){
+  if(!(await verificarClave('admin', 'Configuración'))){
+    ui.activeTab = 'tecnico';
+    render();
+    return;
+  }
+  const cola = leerCola();
+  main.innerHTML = `
+  <div class="note">Aquí se configura el equipo antes de usar la app: técnicos, a qué comercial(es) apoya cada uno, y qué comerciales requieren el campo de Cartera. Esto se comparte para todos los que usan esta app.</div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Este dispositivo</h3>
+    <p class="small-muted">Visitas guardadas en este celular/tablet que aún no se han enviado al servidor (por ejemplo, por falta de señal en su momento).</p>
+    ${cola.length===0
+      ? '<p class="small-muted" style="color:var(--moss); font-weight:600;">✓ No hay nada pendiente por enviar desde este dispositivo.</p>'
+      : `<p style="font-weight:600; color:var(--rust);">${cola.length} visita(s) pendiente(s) por enviar.</p>
+         <div class="checklist" style="margin-bottom:10px;">
+           ${cola.map((v,i)=>`<span class="small-muted" style="background:var(--paper-dark); padding:4px 10px; border-radius:10px;">#${i+1}: ${v.cliente||'(sin cliente)'} — ${v.finca||'(sin finca)'}</span>`).join('')}
+         </div>
+         <button type="button" class="btn small" id="btnReintentarCola">Reintentar envío ahora</button>
+         <button type="button" class="btn-edit" id="btnVaciarCola" style="margin-left:8px;">Borrar pendientes (no se enviarán)</button>`
+    }
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Técnicos</h3>
+    <div class="row2">
+      <input type="text" id="nuevoTecnico" placeholder="Nombre del técnico">
+      <button class="btn small" id="btnAddTecnico" style="width:auto;">Agregar</button>
+    </div>
+    <ul class="tecn-list">
+      ${state.tecnicos.map(t=>`<li>${t} <button class="x-btn" data-t="${t}">✕</button></li>`).join('') || '<li class="small-muted" style="background:none;">Sin técnicos aún</li>'}
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Comercial principal por técnico</h3>
+    <p class="small-muted">Es solo una referencia para sugerir el comercial al iniciar una visita — el técnico puede igual elegir cualquier otro comercial al momento de registrar.</p>
+    ${state.tecnicos.length===0 ? '<p class="small-muted">Agrega técnicos primero.</p>' : state.tecnicos.map(t=>`
+      <div style="margin-bottom:12px;">
+        <label class="first">${t}</label>
+        <select class="principal-select" data-tec="${t}">
+          <option value="">Sin comercial principal</option>
+          ${COMERCIALES.map(c=>`<option value="${c}" ${state.principal[t]===c?'selected':''}>${c}</option>`).join('')}
+        </select>
+      </div>
+    `).join('')}
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Comerciales que requieren campo "Cartera"</h3>
+    <div class="checklist">
+      ${COMERCIALES.map(c=>`
+        <label>
+          <input type="checkbox" class="cartera-check" data-com="${c}" ${state.carteraComerciales.includes(c)?'checked':''}>
+          ${c}
+        </label>
+      `).join('')}
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Seguridad — Contraseñas de acceso</h3>
+    <p class="small-muted">Protección básica para uso interno (evita que alguien abra por error o curiosidad el espacio de otra persona). Deja un campo vacío para no pedir contraseña en ese espacio. Cada quien la ingresa una sola vez por dispositivo/navegador.</p>
+
+    <label class="first">Contraseña de esta pestaña (Configuración)</label>
+    <input type="text" id="adminPasswordInput" value="${state.adminPassword||''}" placeholder="Vacío = sin contraseña">
+
+    <label>Contraseña de Jefe Comercial</label>
+    <input type="text" id="jefePasswordInput" value="${state.jefePassword||''}" placeholder="Vacío = sin contraseña">
+
+    <label>Contraseñas por comercial</label>
+    ${COMERCIALES.map(c=>`
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+        <span style="flex:1; font-size:0.82rem;">${c}</span>
+        <input type="text" class="com-password-input" data-com="${c}" value="${state.comercialPasswords[c]||''}" placeholder="Vacío = sin contraseña" style="flex:1;">
+      </div>
+    `).join('')}
+
+    <label>Contraseñas por técnico</label>
+    ${state.tecnicos.map(t=>`
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+        <span style="flex:1; font-size:0.82rem;">${t}</span>
+        <input type="text" class="tec-password-input" data-tec="${t}" value="${state.tecnicoPasswords[t]||''}" placeholder="Vacío = sin contraseña" style="flex:1;">
+      </div>
+    `).join('')}
+
+    <button class="btn small" id="btnGuardarPasswords" style="margin-top:8px;">Guardar contraseñas</button>
+    <p class="small-muted" id="passwordsGuardadoMsg" style="display:none; color:var(--moss); font-weight:600;">✓ Guardado.</p>
+  </div>
+  `;
+
+  const btnReintentarCola = document.getElementById('btnReintentarCola');
+  if(btnReintentarCola) btnReintentarCola.onclick = async ()=>{
+    btnReintentarCola.textContent = 'Enviando...';
+    await intentarVaciarCola();
+    render();
+  };
+  const btnVaciarCola = document.getElementById('btnVaciarCola');
+  if(btnVaciarCola) btnVaciarCola.onclick = ()=>{
+    if(confirm('¿Seguro? Estas visitas NO se van a enviar ni guardar en ningún lado.')){
+      guardarCola([]);
+      render();
+    }
+  };
+
+  document.getElementById('btnAddTecnico').onclick = async ()=>{
+    const inp = document.getElementById('nuevoTecnico');
+    const name = inp.value.trim();
+    if(!name) return;
+    if(!state.tecnicos.includes(name)) state.tecnicos.push(name);
+    await saveConfig();
+    render();
+  };
+  document.querySelectorAll('.x-btn').forEach(btn=>{
+    btn.onclick = async ()=>{
+      state.tecnicos = state.tecnicos.filter(t=>t!==btn.dataset.t);
+      delete state.principal[btn.dataset.t];
+      await saveConfig();
+      render();
+    };
+  });
+  document.querySelectorAll('.principal-select').forEach(sel=>{
+    sel.onchange = async ()=>{
+      const tec = sel.dataset.tec;
+      if(sel.value) state.principal[tec] = sel.value;
+      else delete state.principal[tec];
+      await saveConfig();
+    };
+  });
+  document.querySelectorAll('.cartera-check').forEach(chk=>{
+    chk.onchange = async ()=>{
+      const com = chk.dataset.com;
+      if(chk.checked){
+        if(!state.carteraComerciales.includes(com)) state.carteraComerciales.push(com);
+      }else{
+        state.carteraComerciales = state.carteraComerciales.filter(c=>c!==com);
+      }
+      await saveConfig();
+    };
+  });
+
+  document.getElementById('btnGuardarPasswords').onclick = async ()=>{
+    state.adminPassword = document.getElementById('adminPasswordInput').value.trim();
+    state.jefePassword = document.getElementById('jefePasswordInput').value.trim();
+    document.querySelectorAll('.com-password-input').forEach(inp=>{
+      state.comercialPasswords[inp.dataset.com] = inp.value.trim();
+    });
+    document.querySelectorAll('.tec-password-input').forEach(inp=>{
+      state.tecnicoPasswords[inp.dataset.tec] = inp.value.trim();
+    });
+    await savePasswords();
+    document.getElementById('passwordsGuardadoMsg').style.display = 'block';
+  };
+}
+
+/* ============ INIT ============ */
+async function init(){
+  document.getElementById('main').innerHTML = `<div class="empty">Cargando...</div>`;
+  await loadConfig();
+  await loadAllVisitas();
+  await intentarVaciarCola();
+  render();
+}
+init();
+
+window.addEventListener('online', async ()=>{
+  const resultado = await intentarVaciarCola();
+  if(resultado && resultado.enviadas > 0) render();
+});
+
+/** Cada vez que la persona vuelve a esta pestaña (la retoma después de tenerla en
+ *  segundo plano), se revisa si la seguridad cambió mientras tanto — así una pestaña
+ *  dejada abierta también queda protegida, no solo las que se abren de nuevo. */
+document.addEventListener('visibilitychange', async ()=>{
+  if(document.visibilityState !== 'visible') return;
+  const configActual = await apiGetAllConfig();
+  const versionActual = configActual['security_version'] || '';
+  const versionVista = sessionStorage.getItem('security_version_seen');
+  if(versionVista !== null && versionVista !== versionActual){
+    Object.keys(sessionStorage).filter(k=>k.startsWith('auth_')).forEach(k=>sessionStorage.removeItem(k));
+    sessionStorage.setItem('security_version_seen', versionActual);
+    state.securityVersion = versionActual;
+    state.tecnicoPasswords = configActual['tecnico_passwords'] ? JSON.parse(configActual['tecnico_passwords']) : {};
+    state.comercialPasswords = configActual['comercial_passwords'] ? JSON.parse(configActual['comercial_passwords']) : {};
+    state.jefePassword = configActual['jefe_password'] || '';
+    state.adminPassword = configActual['admin_password'] || '';
+    if(['jefe','comercial','config'].includes(ui.activeTab)) ui.activeTab = 'tecnico';
+    render();
+  }
+});
+</script>
+</body>
+</html>
